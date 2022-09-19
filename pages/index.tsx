@@ -2,6 +2,7 @@ import { Icon } from '@joinprisma/components';
 import clsx from 'clsx';
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import Hero from '../components/hero/Hero';
 
 const Home: NextPage = () => {
   return (
@@ -13,7 +14,8 @@ const Home: NextPage = () => {
       </Head>
 
       <div className="px-4 mx-auto max-w-[1392px]">
-        <main>
+        <Hero />
+        <main className="pt-40">
           <h2 className="mx-20 pl-8 border-l-[10px] border-yellow my-10 text-on-surface text-display-lg">
             A live learning experience - delightful for kids, powerful for
             teachers
