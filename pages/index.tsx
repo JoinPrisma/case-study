@@ -127,7 +127,7 @@ const Home: NextPage = () => {
           <Heading text="The people who built it 🚀" color="yellow" />
           <Paragraph text="Cupcake sweet roll sesame snaps lollipop sweet. Pastry halvah fruitcake cotton candy cake. Jelly soufflé marshmallow halvah cheesecake sweet roll. Sesame snaps jelly-o sugar plum toffee lemon drops shortbread gingerbread candy gummi bears. Pastry candy canes cake icing candy canes apple pie. Jelly powder jujubes topping pastry jujubes. Gingerbread candy canes bear claw shortbread halvah donut chocolate." />
 
-          <ul className="flex flex-wrap gap-x-[92px] gap-y-6 mb-40">
+          <ul className="grid grid-cols-1 mb-40 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-6 place-items-center">
             {[
               {
                 imageUrl: '',
@@ -250,10 +250,10 @@ const Home: NextPage = () => {
                 },
               },
             ].map((person) => (
-              <li className="-[48px] space-y-6 w-[271px] h-fit even:translate-y-20">
+              <li className="w-full space-y-6 h-fit sm:even:translate-y-1/2 md:even:translate-y-0 lg:even:translate-y-20">
                 <img
                   src={person.imageUrl}
-                  className="w-[271px] aspect-square rounded-[72px] shadow"
+                  className="mx-auto w-[271px] max-w-[90%] aspect-square rounded-[72px] shadow"
                   style={{ background: person.color }}
                 />
                 <div className="space-y-2">
@@ -266,30 +266,28 @@ const Home: NextPage = () => {
                   <div className="flex justify-center gap-2">
                     <a
                       href={person.social.linkedin}
-                      className="relative flex items-center justify-center flex-shrink-0 w-12 h-12 overflow-hidden border rounded-full border-outline/15 group"
+                      className="relative flex items-center justify-center flex-shrink-0 w-12 h-12 overflow-hidden transition-colors border rounded-full border-outline/15 group hover:text-surface"
                       target="_blank"
                     >
                       <div
-                        className="absolute inset-0 transition-opacity opacity-0 group-hover:opacity-80 -z-1"
+                        className="absolute inset-0 transition-opacity opacity-0 group-hover:opacity-100 -z-1"
                         style={{ background: person.color }}
                       />
                       <svg
                         width="25"
                         height="24"
                         viewBox="0 0 25 24"
-                        fill="none"
+                        fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg"
                         className="z-10"
+                        aria-label={`${person.name}'s LinkedIn profile`}
                       >
-                        <path
-                          d="M6.69604 4.02895C6.69604 5.14974 5.76077 6.0579 4.60644 6.0579C3.45211 6.0579 2.51685 5.14974 2.51685 4.02895C2.51685 2.90897 3.45211 2 4.60644 2C5.76077 2 6.69604 2.90897 6.69604 4.02895ZM6.71289 7.68105H2.5V20.6663H6.71289V7.68105ZM13.4383 7.68105H9.25242V20.6663H13.4392V13.8499C13.4392 10.0598 18.5191 9.74977 18.5191 13.8499V20.6663H22.7218V12.4442C22.7218 6.04897 15.2044 6.28189 13.4383 9.43001V7.68105Z"
-                          fill="#49454F"
-                        />
+                        <path d="M6.69604 4.02895C6.69604 5.14974 5.76077 6.0579 4.60644 6.0579C3.45211 6.0579 2.51685 5.14974 2.51685 4.02895C2.51685 2.90897 3.45211 2 4.60644 2C5.76077 2 6.69604 2.90897 6.69604 4.02895ZM6.71289 7.68105H2.5V20.6663H6.71289V7.68105ZM13.4383 7.68105H9.25242V20.6663H13.4392V13.8499C13.4392 10.0598 18.5191 9.74977 18.5191 13.8499V20.6663H22.7218V12.4442C22.7218 6.04897 15.2044 6.28189 13.4383 9.43001V7.68105Z" />
                       </svg>
                     </a>
                     <a
                       href={person.social.twitter}
-                      className="relative flex items-center justify-center flex-shrink-0 w-12 h-12 overflow-hidden border rounded-full border-outline/15 group"
+                      className="relative flex items-center justify-center flex-shrink-0 w-12 h-12 overflow-hidden transition-colors border rounded-full border-outline/15 group hover:text-surface"
                       target="_blank"
                     >
                       <div
@@ -300,16 +298,12 @@ const Home: NextPage = () => {
                         width="25"
                         height="24"
                         viewBox="0 0 25 24"
-                        fill="none"
+                        fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg"
                         className="z-10"
+                        aria-label={`${person.name}'s Twitter profile`}
                       >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M8.85937 21.1108C16.4903 21.1108 20.6641 14.5272 20.6641 8.81802C20.6641 8.63103 20.6641 8.44488 20.6519 8.25957C21.4639 7.64797 22.1648 6.8907 22.7219 6.02322C21.9646 6.37261 21.1614 6.60175 20.3389 6.70297C21.205 6.16303 21.8532 5.3138 22.1629 4.31332C21.3485 4.81656 20.4575 5.17123 19.5284 5.362C18.2424 3.93797 16.1989 3.58944 14.5438 4.51183C12.8887 5.43423 12.0336 7.39815 12.458 9.30236C9.12217 9.12821 6.01414 7.48744 3.90744 4.78838C2.80626 6.76247 3.36872 9.28792 5.19193 10.5557C4.53168 10.5353 3.88583 10.3499 3.30887 10.015C3.30887 10.0326 3.30887 10.0512 3.30887 10.0697C3.30942 12.1263 4.70156 13.8976 6.63739 14.3049C6.02659 14.4783 5.38572 14.5037 4.76404 14.379C5.30756 16.139 6.86515 17.3446 8.64016 17.3793C7.17103 18.5817 5.35618 19.2344 3.48763 19.2324C3.15753 19.2318 2.82776 19.211 2.5 19.1701C4.39732 20.438 6.60497 21.1106 8.85937 21.1074"
-                          fill="#49454F"
-                        />
+                        <path d="M8.85937 21.1108C16.4903 21.1108 20.6641 14.5272 20.6641 8.81802C20.6641 8.63103 20.6641 8.44488 20.6519 8.25957C21.4639 7.64797 22.1648 6.8907 22.7219 6.02322C21.9646 6.37261 21.1614 6.60175 20.3389 6.70297C21.205 6.16303 21.8532 5.3138 22.1629 4.31332C21.3485 4.81656 20.4575 5.17123 19.5284 5.362C18.2424 3.93797 16.1989 3.58944 14.5438 4.51183C12.8887 5.43423 12.0336 7.39815 12.458 9.30236C9.12217 9.12821 6.01414 7.48744 3.90744 4.78838C2.80626 6.76247 3.36872 9.28792 5.19193 10.5557C4.53168 10.5353 3.88583 10.3499 3.30887 10.015C3.30887 10.0326 3.30887 10.0512 3.30887 10.0697C3.30942 12.1263 4.70156 13.8976 6.63739 14.3049C6.02659 14.4783 5.38572 14.5037 4.76404 14.379C5.30756 16.139 6.86515 17.3446 8.64016 17.3793C7.17103 18.5817 5.35618 19.2344 3.48763 19.2324C3.15753 19.2318 2.82776 19.211 2.5 19.1701C4.39732 20.438 6.60497 21.1106 8.85937 21.1074" />
                       </svg>
                     </a>
                   </div>
@@ -319,7 +313,7 @@ const Home: NextPage = () => {
           </ul>
         </main>
 
-        <footer className="border-t border-outline/15">
+        <footer className="border-t border-outline/15 px-2 md:px-6 mx-auto max-w-[1392px]">
           <div className="py-10 tracking-wide text-outline text-body-sm">
             © 2022 Prisma. All rights reserved.
           </div>
