@@ -10,7 +10,7 @@ const Heading: FC<Props> = ({ text, color }) => {
   return (
     <h2
       className={clsx(
-        'mx-20 pl-8 border-l-[10px] my-10 text-on-surface text-display-lg',
+        'sm:mx-20 pl-4 sm:pl-8 border-l-4 sm:border-l-[10px] my-10 text-on-surface text-display-lg',
         {
           'border-yellow': color === 'yellow',
           'border-purple': color === 'purple',

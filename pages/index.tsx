@@ -6,6 +6,7 @@ import FeedbackCarousel from '../components/FeedbackCarousel';
 import Heading from '../components/Heading';
 import Hero from '../components/hero/Hero';
 import LinksCarousel from '../components/LinksCarousel';
+import Paragraph from '../components/Paragraph';
 
 const Home: NextPage = () => {
   return (
@@ -18,22 +19,12 @@ const Home: NextPage = () => {
 
       <div className="overflow-x-clip">
         <Hero />
-        <main className="px-4 pt-40 mx-auto max-w-[1392px]">
+        <main className="px-2 md:px-6 pt-40 mx-auto max-w-[1392px]">
           <Heading
             text="A live learning experience - delightful for kids, powerful for teachers"
             color="yellow"
           />
-          <p className="mb-20 ml-20 mr-12 text-on-surface text-body">
-            Danish wafer apple pie toffee brownie lemon drops jelly beans
-            marzipan. Sweet roll topping pudding sweet roll icing. Cupcake sweet
-            roll sesame snaps lollipop sweet. Pastry halvah fruitcake cotton
-            candy cake. Jelly soufflé marshmallow halvah cheesecake sweet roll.
-            Sesame snaps jelly-o sugar plum toffee lemon drops shortbread
-            gingerbread candy gummi bears. Pastry candy canes cake icing candy
-            canes apple pie. Jelly powder jujubes topping pastry jujubes.
-            Gingerbread candy canes bear claw shortbread halvah donut chocolate.
-          </p>
-
+          <Paragraph text=" Danish wafer apple pie toffee brownie lemon drops jelly beans marzipan. Sweet roll topping pudding sweet roll icing. Cupcake sweet roll sesame snaps lollipop sweet. Pastry halvah fruitcake cotton candy cake. Jelly soufflé marshmallow halvah cheesecake sweet roll.  Sesame snaps jelly-o sugar plum toffee lemon drops shortbread gingerbread candy gummi bears. Pastry candy canes cake icing candy canes apple pie. Jelly powder jujubes topping pastry jujubes.  Gingerbread candy canes bear claw shortbread halvah donut chocolate." />
           <FeedbackCarousel />
 
           {/* Videos */}
@@ -134,15 +125,7 @@ const Home: NextPage = () => {
           </div>
 
           <Heading text="The people who built it 🚀" color="yellow" />
-          <p className="mb-40 ml-20 mr-12 text-on-surface text-body">
-            Cupcake sweet roll sesame snaps lollipop sweet. Pastry halvah
-            fruitcake cotton candy cake. Jelly soufflé marshmallow halvah
-            cheesecake sweet roll. Sesame snaps jelly-o sugar plum toffee lemon
-            drops shortbread gingerbread candy gummi bears. Pastry candy canes
-            cake icing candy canes apple pie. Jelly powder jujubes topping
-            pastry jujubes. Gingerbread candy canes bear claw shortbread halvah
-            donut chocolate.
-          </p>
+          <Paragraph text="Cupcake sweet roll sesame snaps lollipop sweet. Pastry halvah fruitcake cotton candy cake. Jelly soufflé marshmallow halvah cheesecake sweet roll. Sesame snaps jelly-o sugar plum toffee lemon drops shortbread gingerbread candy gummi bears. Pastry candy canes cake icing candy canes apple pie. Jelly powder jujubes topping pastry jujubes. Gingerbread candy canes bear claw shortbread halvah donut chocolate." />
 
           <ul className="flex flex-wrap gap-x-[92px] gap-y-6 mb-40">
             {[

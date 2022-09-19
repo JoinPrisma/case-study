@@ -45,7 +45,7 @@ const FeedbackCarousel: FC = () => {
           ),
         },
       ].map((cardData) => (
-        <li className="inline-block p-10 rounded-[48px] shadow space-y-8 bg-surface w-full mx-4 max-w-[439px] h-fit flex-shrink-0 snap-center">
+        <li className="inline-block p-10 rounded-[48px] shadow space-y-8 bg-surface w-full first:ml-0 last:mr-0 mx-4 max-w-[439px] h-fit flex-shrink-0 snap-center">
           <img
             src={cardData.imageSrc}
             className="rounded-[32px] w-20 h-20 shadow-lg bg-on-surface/8"
