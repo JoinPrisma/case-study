@@ -2,6 +2,7 @@ import { Icon } from '@joinprisma/components';
 import clsx from 'clsx';
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import Heading from '../components/Heading';
 import Hero from '../components/hero/Hero';
 
 const Home: NextPage = () => {
@@ -13,13 +14,13 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="px-4 mx-auto max-w-[1392px]">
+      <div className="px-4 mx-auto max-w-[1392px] overflow-x-clip">
         <Hero />
         <main className="pt-40">
-          <h2 className="mx-20 pl-8 border-l-[10px] border-yellow my-10 text-on-surface text-display-lg">
-            A live learning experience - delightful for kids, powerful for
-            teachers
-          </h2>
+          <Heading
+            text="A live learning experience - delightful for kids, powerful for teachers"
+            color="yellow"
+          />
           <p className="mb-40 ml-20 mr-12 text-on-surface text-body">
             Danish wafer apple pie toffee brownie lemon drops jelly beans
             marzipan. Sweet roll topping pudding sweet roll icing. Cupcake sweet
@@ -235,9 +236,7 @@ const Home: NextPage = () => {
             </button>
           </div>
 
-          <h2 className="mx-20 pl-8 border-l-[10px] border-purple my-10 text-on-surface text-display-lg">
-            The people who built it 🚀
-          </h2>
+          <Heading text="The people who built it 🚀" color="yellow" />
           <p className="mb-40 ml-20 mr-12 text-on-surface text-body">
             Cupcake sweet roll sesame snaps lollipop sweet. Pastry halvah
             fruitcake cotton candy cake. Jelly soufflé marshmallow halvah
