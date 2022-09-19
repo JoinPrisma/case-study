@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "Mark Offc Pro";
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+  src: url("/fonts/mark_offc_pro/bold/021bca8a-04d2-4658-9598-7f54e37255a3.eot?#iefix");
+  src: url("/fonts/mark_offc_pro/bold/021bca8a-04d2-4658-9598-7f54e37255a3.eot?#iefix")
+      format("eot"),
+    url("/fonts/mark_offc_pro/bold/911d53bf-61c5-453a-ba54-6c6b12e432d8.woff2")
+      format("woff2"),
+    url("/fonts/mark_offc_pro/bold/9069c8de-de1f-4c7e-b81f-dee8057e98f8.woff")
+      format("woff"),
+    url("/fonts/mark_offc_pro/bold/dafbeddd-575a-4f74-b362-b0a940ee73e4.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Mark Offc Pro";
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+  src: url("/fonts/mark_offc_pro/normal/76b78c7b-50e8-443f-947d-491bd1363209.eot?#iefix");
+  src: url("/fonts/mark_offc_pro/normal/76b78c7b-50e8-443f-947d-491bd1363209.eot?#iefix")
+      format("eot"),
+    url("/fonts/mark_offc_pro/normal/b3504f0d-8be1-4759-bb03-dd041a630b85.woff2")
+      format("woff2"),
+    url("/fonts/mark_offc_pro/normal/f4f1b391-1256-4245-ba89-842d884c1e51.woff")
+      format("woff"),
+    url("/fonts/mark_offc_pro/normal/1f72bfeb-0b2a-45fa-aaee-bbd991d40541.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  font-display: swap;
+  font-weight: 600;
+  font-style: normal;
+  src: url("/fonts/noto_sans/NotoSansDisplay-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+  src: url("/fonts/noto_sans/NotoSansDisplay-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+  src: url("/fonts/noto_sans/NotoSansDisplay-Regular.ttf") format("truetype");
+}
