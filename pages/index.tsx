@@ -2,6 +2,7 @@ import { Icon } from '@joinprisma/components';
 import clsx from 'clsx';
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import FeedbackCarousel from '../components/FeedbackCarousel';
 import Heading from '../components/Heading';
 import Hero from '../components/hero/Hero';
 
@@ -14,14 +15,14 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="px-4 mx-auto max-w-[1392px] overflow-x-clip">
+      <div className="overflow-x-clip">
         <Hero />
-        <main className="pt-40">
+        <main className="px-4 pt-40 mx-auto max-w-[1392px]">
           <Heading
             text="A live learning experience - delightful for kids, powerful for teachers"
             color="yellow"
           />
-          <p className="mb-40 ml-20 mr-12 text-on-surface text-body">
+          <p className="mb-20 ml-20 mr-12 text-on-surface text-body">
             Danish wafer apple pie toffee brownie lemon drops jelly beans
             marzipan. Sweet roll topping pudding sweet roll icing. Cupcake sweet
             roll sesame snaps lollipop sweet. Pastry halvah fruitcake cotton
@@ -32,65 +33,7 @@ const Home: NextPage = () => {
             Gingerbread candy canes bear claw shortbread halvah donut chocolate.
           </p>
 
-          {/* feedback cards */}
-          <ul className="flex gap-8 mb-40 overflow-x-auto">
-            {[
-              {
-                imageSrc: '',
-                text: 'Gabby has been very happy with her first couple days—and went to sleep last night saying “I cannot wait for school tomorrow!” I think that’s a first',
-                name: 'Mia L.',
-                roleChip: (
-                  <div className="bg-coach-container text-on-coach-container px-2 py-0.5 rounded-2">
-                    Prisma coach
-                  </div>
-                ),
-              },
-              {
-                imageSrc: '',
-                text: '“I feel much more comfortable and happy with Prisma than with a public school.”',
-                name: 'Emma M.',
-                roleChip: (
-                  <div className="bg-learner-container text-on-learner-container px-2 py-0.5 rounded-2">
-                    Prisma learner
-                  </div>
-                ),
-              },
-              {
-                imageSrc: '',
-                text: 'Gabby has been very happy with her first couple days—and went to sleep last night saying “I cannot wait for school tomorrow!” I think that’s a first',
-                name: 'Mia L.',
-                roleChip: (
-                  <div className="bg-yellow-container text-on-yellow-container px-2 py-0.5 rounded-2">
-                    Prisma curriculum designer
-                  </div>
-                ),
-              },
-              {
-                imageSrc: '',
-                text: '“I feel much more comfortable and happy with Prisma than with a public school.”',
-                name: 'Ben W.',
-                roleChip: (
-                  <div className="bg-learner-container text-on-learner-container px-2 py-0.5 rounded-2">
-                    Prisma learner
-                  </div>
-                ),
-              },
-            ].map((cardData) => (
-              <li className="p-10 rounded-[48px] shadow space-y-8 bg-surface w-full max-w-[439px] h-fit flex-shrink-0">
-                <img
-                  src={cardData.imageSrc}
-                  className="rounded-[32px] w-20 h-20 shadow-lg bg-on-surface/8"
-                  role="presentation"
-                />
-                <p className="text-headline text-on-surface-variant">
-                  {cardData.text}
-                </p>
-                <div className="flex items-center gap-2 font-medium text-on-surface text-body">
-                  <span>{cardData.name}</span> {cardData.roleChip}
-                </div>
-              </li>
-            ))}
-          </ul>
+          <FeedbackCarousel />
 
           {/* Videos */}
           <ul className="mb-40 space-y-40">
