@@ -4,7 +4,7 @@ import { FC } from 'react';
 const BreakoutRoom: FC = () => {
   return (
     <div
-      className="absolute left-[-114px] bottom-[48px] -rotate-[2.82deg] space-y-2"
+      className="absolute left-[-10%] bottom-[10%] -rotate-[2.82deg] space-y-2"
       role="presentation"
     >
       <div

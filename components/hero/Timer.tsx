@@ -4,7 +4,7 @@ import { FC } from 'react';
 const Timer: FC = () => {
   return (
     <div
-      className="absolute top-[40px] right-[-52px] rotate-[2.7deg] flex items-center bg-surface shadow-lg px-[18px] py-[22px] rounded-[26px]"
+      className="absolute top-[6%] right-[-5%] rotate-[2.7deg] flex items-center bg-surface shadow-lg px-[18px] py-[22px] rounded-[26px]"
       role="presentation"
     >
       <div className="text-display-sm text-on-suface">02</div>

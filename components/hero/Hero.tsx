@@ -13,7 +13,7 @@ import Timer from './Timer';
 const Hero: FC = () => {
   return (
     <header>
-      <div className="pt-[96px] mx-auto mt-40 w-[1143px] aspect-video ring-on-surface ring-[16px] border-on-surface rounded-[24px] relative">
+      <div className="pt-[96px] mx-auto mt-40 w-[calc(100%-48px)] max-w-[1143px] aspect-[16/10] ring-on-surface ring-[16px] border-on-surface rounded-[24px] relative">
         <LiveIndicator />
         <ChatMessage />
         <CanvasesList />

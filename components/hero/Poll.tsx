@@ -4,7 +4,7 @@ import { FC } from 'react';
 const Poll: FC = () => {
   return (
     <div
-      className="absolute bottom-[140px] right-[-100px] rotate-[-2.75deg] bg-surface shadow-lg p-6 rounded-[24px]"
+      className="absolute bottom-[19%] right-[-9.5%] w-[300px] z-10 rotate-[-2.75deg] bg-surface shadow-lg p-6 rounded-[24px]"
       role="presentation"
     >
       <div className="mb-6 text-center text-display-sm text-on-suface">

@@ -2,7 +2,7 @@ import { FC } from 'react';
 
 const LearnerCursor: FC = () => {
   return (
-    <div className="absolute left-[190px] bottom-[270px]">
+    <div className="absolute left-[16%] bottom-[45%]">
       <div className="relative w-full h-full -ml-0.5">
         {/* cursor svg TODO minify */}
         <svg

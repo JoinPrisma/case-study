@@ -2,7 +2,7 @@ import { FC } from 'react';
 
 const CallUsers: FC = () => {
   return (
-    <div className="absolute bottom-[90px] left-1/2 -translate-x-1/2 flex gap-3">
+    <div className="absolute bottom-[19%] left-1/2 -translate-x-1/2 flex gap-3">
       <div className="w-40 h-40 rounded-full shadow-md bg-on-surface/15" />
       <div className="relative w-40 h-40 rounded-full shadow-md bg-on-surface/15">
         <div
