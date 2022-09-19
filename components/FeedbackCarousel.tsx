@@ -2,7 +2,7 @@ import { FC } from 'react';
 
 const FeedbackCarousel: FC = () => {
   return (
-    <ul className="w-screen py-20 mb-20 overflow-x-auto snap-x snap-mandatory lg:snap-proximity ml-[50%] -translate-x-1/2 whitespace-nowrap px-[calc(50vw-50%)] scrollbar-none">
+    <ul className="w-screen py-20 mb-20 [&>*]:align-top overflow-x-auto snap-x snap-mandatory lg:snap-proximity ml-[50%] -translate-x-1/2 whitespace-nowrap px-[calc(50vw-50%)] scrollbar-none">
       {[
         {
           imageSrc: '',

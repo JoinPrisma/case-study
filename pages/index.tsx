@@ -5,6 +5,7 @@ import Head from 'next/head';
 import FeedbackCarousel from '../components/FeedbackCarousel';
 import Heading from '../components/Heading';
 import Hero from '../components/hero/Hero';
+import LinksCarousel from '../components/LinksCarousel';
 
 const Home: NextPage = () => {
   return (
@@ -36,7 +37,7 @@ const Home: NextPage = () => {
           <FeedbackCarousel />
 
           {/* Videos */}
-          <ul className="mb-40 space-y-40">
+          <ul className="mb-20 space-y-40">
             {[
               {
                 heading: 'Interactive content, all in one place',
@@ -110,54 +111,7 @@ const Home: NextPage = () => {
             ))}
           </ul>
 
-          {/* external links cards */}
-          <ul className="flex gap-4 mb-40 overflow-x-auto">
-            {[
-              {
-                heading: 'Try it out!',
-                text: null,
-                linkText: 'Go to playground',
-                linkUrl: 'https://text.joinprisma.com',
-              },
-              {
-                heading: 'How our collaborative editor works',
-                text: 'Cake liquorice bear claw chocolate macaroon jelly beans sweet sesame snaps. Gummies chocolate jelly-o cheesecake sugar plum soufflé pudding lollipop caramels.',
-                linkText: 'Read now',
-                linkUrl: '',
-              },
-              {
-                heading: 'How we solved performance issues',
-                text: 'Icing sesame snaps chocolate cake chocolate bar halvah lemon drops oat cake.',
-                linkText: 'Read now',
-                linkUrl: '',
-              },
-              {
-                heading: 'How our collaborative editor works',
-                text: 'Cake liquorice bear claw chocolate macaroon jelly beans sweet sesame snaps. Gummies chocolate jelly-o cheesecake sugar plum soufflé pudding lollipop caramels.',
-                linkText: 'Read now',
-                linkUrl: '',
-              },
-            ].map((cardData) => (
-              <li className="px-10 py-8 rounded-[48px] first:shadow space-y-6 bg-outline/12 first:bg-surface w-full max-w-[420px] h-fit flex-shrink-0">
-                <h3 className="text-display-sm text-on-surface-">
-                  {cardData.heading}
-                </h3>
-                {cardData.text && (
-                  <p className="text-body text-outline">{cardData.text}</p>
-                )}
-                <div className="flex justify-end underline cursor-pointer text-on-surface-variant hover:text-on-surface-variant-hover active:text-on-surface-variant-active text-body">
-                  <a
-                    className="flex gap-2"
-                    href={cardData.linkUrl}
-                    target="_blank"
-                  >
-                    {cardData.linkText}
-                    <Icon className="w-6 h-6" name="arrow" variant="right" />
-                  </a>
-                </div>
-              </li>
-            ))}
-          </ul>
+          <LinksCarousel />
 
           {/* learn more section */}
           <div
