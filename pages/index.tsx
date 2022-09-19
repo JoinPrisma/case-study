@@ -72,17 +72,17 @@ const Home: NextPage = () => {
               },
             ].map((videoData) => (
               <li
-                className="flex gap-20 odd:flex-row-reverse"
+                className="flex flex-col-reverse items-center lg:flex-row lg:gap-20 lg:odd:flex-row-reverse"
                 key={videoData.heading}
               >
-                <div className="px-10 pt-8 space-y-6">
+                <div className="pt-8 space-y-6 sm:px-10 lg:px-5 xl:px-10">
                   <h3 className="text-display text-on-surface">
                     {videoData.heading}
                   </h3>
                   <p className="text-outline text-headline">{videoData.body}</p>
                 </div>
                 <div
-                  className="flex-shrink-0 rounded-4 aspect-video w-[52%] relative"
+                  className="rounded-4 aspect-video w-full sm:w-4/5 lg:w-[580px] xl:w-[690px] relative flex-shrink-0"
                   style={{ backgroundColor: videoData.videoBackground }}
                 >
                   <div
