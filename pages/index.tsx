@@ -1,3 +1,5 @@
+import { Icon } from '@joinprisma/components';
+import clsx from 'clsx';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 
@@ -10,10 +12,437 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="mx-auto max-w-7xl text-green">
-        <main>Hi</main>
+      <div className="px-4 mx-auto max-w-[1392px]">
+        <main>
+          <h2 className="mx-20 pl-8 border-l-[10px] border-yellow my-10 text-on-surface text-display-lg">
+            A live learning experience - delightful for kids, powerful for
+            teachers
+          </h2>
+          <p className="mb-40 ml-20 mr-12 text-on-surface text-body">
+            Danish wafer apple pie toffee brownie lemon drops jelly beans
+            marzipan. Sweet roll topping pudding sweet roll icing. Cupcake sweet
+            roll sesame snaps lollipop sweet. Pastry halvah fruitcake cotton
+            candy cake. Jelly soufflé marshmallow halvah cheesecake sweet roll.
+            Sesame snaps jelly-o sugar plum toffee lemon drops shortbread
+            gingerbread candy gummi bears. Pastry candy canes cake icing candy
+            canes apple pie. Jelly powder jujubes topping pastry jujubes.
+            Gingerbread candy canes bear claw shortbread halvah donut chocolate.
+          </p>
 
-        <footer>foot</footer>
+          {/* feedback cards */}
+          <ul className="flex gap-8 mb-40 overflow-x-auto">
+            {[
+              {
+                imageSrc: '',
+                text: 'Gabby has been very happy with her first couple days—and went to sleep last night saying “I cannot wait for school tomorrow!” I think that’s a first',
+                name: 'Mia L.',
+                roleChip: (
+                  <div className="bg-coach-container text-on-coach-container px-2 py-0.5 rounded-2">
+                    Prisma coach
+                  </div>
+                ),
+              },
+              {
+                imageSrc: '',
+                text: '“I feel much more comfortable and happy with Prisma than with a public school.”',
+                name: 'Emma M.',
+                roleChip: (
+                  <div className="bg-learner-container text-on-learner-container px-2 py-0.5 rounded-2">
+                    Prisma learner
+                  </div>
+                ),
+              },
+              {
+                imageSrc: '',
+                text: 'Gabby has been very happy with her first couple days—and went to sleep last night saying “I cannot wait for school tomorrow!” I think that’s a first',
+                name: 'Mia L.',
+                roleChip: (
+                  <div className="bg-yellow-container text-on-yellow-container px-2 py-0.5 rounded-2">
+                    Prisma curriculum designer
+                  </div>
+                ),
+              },
+              {
+                imageSrc: '',
+                text: '“I feel much more comfortable and happy with Prisma than with a public school.”',
+                name: 'Ben W.',
+                roleChip: (
+                  <div className="bg-learner-container text-on-learner-container px-2 py-0.5 rounded-2">
+                    Prisma learner
+                  </div>
+                ),
+              },
+            ].map((cardData) => (
+              <li className="p-10 rounded-[48px] shadow space-y-8 bg-surface w-full max-w-[439px] h-fit flex-shrink-0">
+                <img
+                  src={cardData.imageSrc}
+                  className="rounded-[32px] w-20 h-20 shadow-lg bg-on-surface/8"
+                  role="presentation"
+                />
+                <p className="text-headline text-on-surface-variant">
+                  {cardData.text}
+                </p>
+                <div className="flex items-center gap-2 font-medium text-on-surface text-body">
+                  <span>{cardData.name}</span> {cardData.roleChip}
+                </div>
+              </li>
+            ))}
+          </ul>
+
+          {/* Videos */}
+          <ul className="mb-40 space-y-40">
+            {[
+              {
+                heading: 'Interactive content, all in one place',
+                body: 'Rich, interactive content that follows a story arc. Less distractions for learners, less juggling of materials for coach.',
+                videoTitle: 'Overview',
+                videoTitleClass:
+                  'bg-yellow left-[51px] bottom-[58px] rotate-[-0.81deg]',
+                videoBackground: '#FFD38B',
+              },
+              {
+                heading: 'Easy to use & fun, even for the youngest',
+                body: 'Simple interface for learners, reactions, backgrounds, etc.',
+                videoTitle: (
+                  <div>
+                    Learner <br /> experience
+                  </div>
+                ),
+                videoTitleClass:
+                  'bg-green rotate-[2deg] left-[50px] bottom-[48px]',
+                videoBackground: '#81E088',
+              },
+              {
+                heading: 'Breakout rooms',
+                body: 'Materials inside breakout rooms, coach can keep the overview from the main room',
+                videoTitle: (
+                  <div>
+                    Breakout <br /> rooms
+                  </div>
+                ),
+                videoTitleClass:
+                  'bg-purple left-[51px] bottom-[61px] rotate-[-0.81deg]',
+                videoBackground: '#E2AEFF',
+              },
+              {
+                heading: 'A collaborative editor for curriculum designers',
+                body: 'Built to fit the workflow of our designers, fully collaborative and highly performant.',
+                videoTitle: 'Editor',
+                videoTitleClass:
+                  'bg-blue rotate-[2deg] left-[50px] bottom-[48px]',
+                videoBackground: '#BCD4FF',
+              },
+            ].map((videoData) => (
+              <li
+                className="flex gap-20 odd:flex-row-reverse"
+                key={videoData.heading}
+              >
+                <div className="px-10 pt-8 space-y-6">
+                  <h3 className="text-display text-on-surface">
+                    {videoData.heading}
+                  </h3>
+                  <p className="text-outline text-headline">{videoData.body}</p>
+                </div>
+                <div
+                  className="flex-shrink-0 rounded-4 aspect-video w-[52%] relative"
+                  style={{ backgroundColor: videoData.videoBackground }}
+                >
+                  <div
+                    className={clsx(
+                      'absolute text-on-secondary shadow-md text-display-lg px-2 py-1.5 rounded-2',
+                      videoData.videoTitleClass
+                    )}
+                    style={{
+                      textShadow:
+                        '0px 22.1px 27.6px rgba(0, 0, 0, 0.1), 0px 8.8px 11px rgba(0, 0, 0, 0.1)',
+                    }}
+                  >
+                    {videoData.videoTitle}
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ul>
+
+          {/* external links cards */}
+          <ul className="flex gap-4 mb-40 overflow-x-auto">
+            {[
+              {
+                heading: 'Try it out!',
+                text: null,
+                linkText: 'Go to playground',
+                linkUrl: 'https://text.joinprisma.com',
+              },
+              {
+                heading: 'How our collaborative editor works',
+                text: 'Cake liquorice bear claw chocolate macaroon jelly beans sweet sesame snaps. Gummies chocolate jelly-o cheesecake sugar plum soufflé pudding lollipop caramels.',
+                linkText: 'Read now',
+                linkUrl: '',
+              },
+              {
+                heading: 'How we solved performance issues',
+                text: 'Icing sesame snaps chocolate cake chocolate bar halvah lemon drops oat cake.',
+                linkText: 'Read now',
+                linkUrl: '',
+              },
+              {
+                heading: 'How our collaborative editor works',
+                text: 'Cake liquorice bear claw chocolate macaroon jelly beans sweet sesame snaps. Gummies chocolate jelly-o cheesecake sugar plum soufflé pudding lollipop caramels.',
+                linkText: 'Read now',
+                linkUrl: '',
+              },
+            ].map((cardData) => (
+              <li className="px-10 py-8 rounded-[48px] first:shadow space-y-6 bg-outline/12 first:bg-surface w-full max-w-[420px] h-fit flex-shrink-0">
+                <h3 className="text-display-sm text-on-surface-">
+                  {cardData.heading}
+                </h3>
+                {cardData.text && (
+                  <p className="text-body text-outline">{cardData.text}</p>
+                )}
+                <div className="flex justify-end underline cursor-pointer text-on-surface-variant hover:text-on-surface-variant-hover active:text-on-surface-variant-active text-body">
+                  <a
+                    className="flex gap-2"
+                    href={cardData.linkUrl}
+                    target="_blank"
+                  >
+                    {cardData.linkText}
+                    <Icon className="w-6 h-6" name="arrow" variant="right" />
+                  </a>
+                </div>
+              </li>
+            ))}
+          </ul>
+
+          {/* learn more section */}
+          <div
+            className="mb-40 rounded-[48px] w-full py-24 px-10"
+            style={{
+              background:
+                'radial-gradient(38.22% 131.68% at 7.33% 108.42%, rgba(56, 231, 255, 0.5888) 0%, rgba(255, 225, 94, 0.64) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(32.61% 112.38% at 100% 17.08%, #FF8E5E 0%, #FFEFB7 100%)',
+            }}
+          >
+            <h2 className="mb-6 text-center text-on-surface text-display-lg">
+              Want to learn more?
+            </h2>
+            <p className="mx-auto mb-12 text-center text-on-surface text-headline">
+              Sugar plum caramels powder sweet roll carrot cake biscuit.
+            </p>
+            <button className="mx-auto flex h-16 w-[280px] items-center justify-center gap-3 bg-tertiary hover:bg-tertiary-hover active:bg-tertiary-active text-tertiary-container rounded-4 shadow text-label">
+              <Icon name="lightning" className="w-6 h-6" />
+              <span>Learn more</span>
+            </button>
+          </div>
+
+          <h2 className="mx-20 pl-8 border-l-[10px] border-purple my-10 text-on-surface text-display-lg">
+            The people who built it 🚀
+          </h2>
+          <p className="mb-40 ml-20 mr-12 text-on-surface text-body">
+            Cupcake sweet roll sesame snaps lollipop sweet. Pastry halvah
+            fruitcake cotton candy cake. Jelly soufflé marshmallow halvah
+            cheesecake sweet roll. Sesame snaps jelly-o sugar plum toffee lemon
+            drops shortbread gingerbread candy gummi bears. Pastry candy canes
+            cake icing candy canes apple pie. Jelly powder jujubes topping
+            pastry jujubes. Gingerbread candy canes bear claw shortbread halvah
+            donut chocolate.
+          </p>
+
+          <ul className="flex flex-wrap gap-x-[92px] gap-y-6 mb-40">
+            {[
+              {
+                imageUrl: '',
+                color: '#F5B981',
+                name: 'Andrés',
+                title: 'Software Engineer',
+                social: {
+                  linkedin: '',
+                  twitter: '',
+                },
+              },
+              {
+                imageUrl: '',
+                color: '#FFB4A9',
+                name: 'Andrea',
+                title: 'Software Engineer',
+                social: {
+                  linkedin: '',
+                  twitter: '',
+                },
+              },
+              {
+                imageUrl: '',
+                color: '#FFE15E',
+                name: 'Alain',
+                title: 'Founder & Co-President',
+                social: {
+                  linkedin: '',
+                  twitter: '',
+                },
+              },
+              {
+                imageUrl: '',
+                color: '#6DDF77',
+                name: 'Juan',
+                title: 'Software Engineer',
+                social: {
+                  linkedin: '',
+                  twitter: '',
+                },
+              },
+              {
+                imageUrl: '',
+                color: '#FFE15E',
+                name: 'Dominique',
+                title: 'Product Lead',
+                social: {
+                  linkedin: '',
+                  twitter: '',
+                },
+              },
+              {
+                imageUrl: '',
+                color: '#FFD480',
+                name: 'Javi',
+                title: 'Software Engineer',
+                social: {
+                  linkedin: '',
+                  twitter: '',
+                },
+              },
+              {
+                imageUrl: '',
+                color: '#85CEFF',
+                name: 'Diego',
+                title: 'Software Engineer',
+                social: {
+                  linkedin: '',
+                  twitter: '',
+                },
+              },
+              {
+                imageUrl: '',
+                color: '#6FD8D6',
+                name: 'Fede',
+                title: 'Software Engineer',
+                social: {
+                  linkedin: '',
+                  twitter: '',
+                },
+              },
+              {
+                imageUrl: '',
+                color: '#85CEFF',
+                name: 'Fabián',
+                title: 'Software Engineer',
+                social: {
+                  linkedin: '',
+                  twitter: '',
+                },
+              },
+              {
+                imageUrl: '',
+                color: '#F5B981',
+                name: 'Dominik',
+                title: 'Product Designer',
+                social: {
+                  linkedin: '',
+                  twitter: '',
+                },
+              },
+              {
+                imageUrl: '',
+                color: '#B38FFF',
+                name: 'Martín',
+                title: 'Software Engineer',
+                social: {
+                  linkedin: '',
+                  twitter: '',
+                },
+              },
+              {
+                imageUrl: '',
+                color: '#DB9CFC',
+                name: 'Leti',
+                title: 'Software Engineer',
+                social: {
+                  linkedin: '',
+                  twitter: '',
+                },
+              },
+            ].map((person) => (
+              <li className="-[48px] space-y-6 w-[271px] h-fit even:translate-y-20">
+                <img
+                  src={person.imageUrl}
+                  className="w-[271px] aspect-square rounded-[72px] shadow"
+                  style={{ background: person.color }}
+                />
+                <div className="space-y-2">
+                  <h3 className="text-center text-display-sm text-on-surface">
+                    {person.name}
+                  </h3>
+                  <p className="text-center text-body text-outline">
+                    {person.title}
+                  </p>
+                  <div className="flex justify-center gap-2">
+                    <a
+                      href={person.social.linkedin}
+                      className="relative flex items-center justify-center flex-shrink-0 w-12 h-12 overflow-hidden border rounded-full border-outline/15 group"
+                      target="_blank"
+                    >
+                      <div
+                        className="absolute inset-0 transition-opacity opacity-0 group-hover:opacity-80 -z-1"
+                        style={{ background: person.color }}
+                      />
+                      <svg
+                        width="25"
+                        height="24"
+                        viewBox="0 0 25 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="z-10"
+                      >
+                        <path
+                          d="M6.69604 4.02895C6.69604 5.14974 5.76077 6.0579 4.60644 6.0579C3.45211 6.0579 2.51685 5.14974 2.51685 4.02895C2.51685 2.90897 3.45211 2 4.60644 2C5.76077 2 6.69604 2.90897 6.69604 4.02895ZM6.71289 7.68105H2.5V20.6663H6.71289V7.68105ZM13.4383 7.68105H9.25242V20.6663H13.4392V13.8499C13.4392 10.0598 18.5191 9.74977 18.5191 13.8499V20.6663H22.7218V12.4442C22.7218 6.04897 15.2044 6.28189 13.4383 9.43001V7.68105Z"
+                          fill="#49454F"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      href={person.social.twitter}
+                      className="relative flex items-center justify-center flex-shrink-0 w-12 h-12 overflow-hidden border rounded-full border-outline/15 group"
+                      target="_blank"
+                    >
+                      <div
+                        className="absolute inset-0 transition-opacity opacity-0 group-hover:opacity-80 -z-1"
+                        style={{ background: person.color }}
+                      />
+                      <svg
+                        width="25"
+                        height="24"
+                        viewBox="0 0 25 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="z-10"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M8.85937 21.1108C16.4903 21.1108 20.6641 14.5272 20.6641 8.81802C20.6641 8.63103 20.6641 8.44488 20.6519 8.25957C21.4639 7.64797 22.1648 6.8907 22.7219 6.02322C21.9646 6.37261 21.1614 6.60175 20.3389 6.70297C21.205 6.16303 21.8532 5.3138 22.1629 4.31332C21.3485 4.81656 20.4575 5.17123 19.5284 5.362C18.2424 3.93797 16.1989 3.58944 14.5438 4.51183C12.8887 5.43423 12.0336 7.39815 12.458 9.30236C9.12217 9.12821 6.01414 7.48744 3.90744 4.78838C2.80626 6.76247 3.36872 9.28792 5.19193 10.5557C4.53168 10.5353 3.88583 10.3499 3.30887 10.015C3.30887 10.0326 3.30887 10.0512 3.30887 10.0697C3.30942 12.1263 4.70156 13.8976 6.63739 14.3049C6.02659 14.4783 5.38572 14.5037 4.76404 14.379C5.30756 16.139 6.86515 17.3446 8.64016 17.3793C7.17103 18.5817 5.35618 19.2344 3.48763 19.2324C3.15753 19.2318 2.82776 19.211 2.5 19.1701C4.39732 20.438 6.60497 21.1106 8.85937 21.1074"
+                          fill="#49454F"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </main>
+
+        <footer className="border-t border-outline/15">
+          <div className="py-10 tracking-wide text-outline text-body-sm">
+            © 2022 Prisma. All rights reserved.
+          </div>
+        </footer>
       </div>
     </>
   );

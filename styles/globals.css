@@ -13,6 +13,7 @@
     font-family: Noto Sans, sans-serif;
     @apply font-normal;
     @apply bg-green-container;
+    @apply m-0;
   }
 
   button:focus {
