@@ -18,7 +18,7 @@ const Hero: FC = () => {
     <header>
       <div
         className={clsx(
-          'mx-auto sm:mt-40 w-full sm:w-[calc(100%-32px)] md:w-[calc(100%-48px)] min-h-[735px] sm:min-h-0 sm:h-auto max-w-[1143px] sm:aspect-[16/10] ring-on-surface sm:ring-[8px] md:ring-[16px] border-on-surface rounded-[24px] relative transition-colors transition-500',
+          'mx-auto sm:mt-40 w-full sm:w-[calc(100%-32px)] md:w-[calc(100%-48px)] min-h-[735px] sm:min-h-0 sm:h-auto max-w-[1143px] sm:aspect-[16/10] ring-on-surface dark:ring-green-container sm:ring-[8px] md:ring-[16px] border-on-surface rounded-[24px] relative transition-colors transition-500',
           canvasClass
         )}
       >

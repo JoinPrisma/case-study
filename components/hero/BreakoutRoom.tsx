@@ -13,7 +13,7 @@ const BreakoutRoom: FC = () => {
       >
         Group A
       </div>
-      <div className="rounded-4 lg:rounded-[36px] bg-[#b0eab5] grid grid-cols-2 gap-1.5 p-1.5 lg:gap-3 lg:p-3 shadow-xl">
+      <div className="rounded-4 lg:rounded-[36px] bg-[#b0eab5] dark:bg-green-container grid grid-cols-2 gap-1.5 p-1.5 lg:gap-3 lg:p-3 shadow-xl dark:shadow-black/30">
         <div className="bg-on-surface/15 w-20 lg:w-[117px] aspect-square rounded-4 lg:rounded-[26px] shadow-lg" />
         <div className="bg-on-surface/15 w-20 lg:w-[117px] aspect-square rounded-4 lg:rounded-[26px] shadow-md" />
         <div className="bg-on-surface/15 w-20 lg:w-[117px] aspect-square rounded-4 lg:rounded-[26px] shadow-md" />

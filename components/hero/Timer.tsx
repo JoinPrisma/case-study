@@ -4,13 +4,13 @@ import { FC } from 'react';
 const Timer: FC = () => {
   return (
     <div
-      className="absolute top-[70px] right-[-40px] sm:top-[-15%] sm:right-[-10%] md:right-[-7%] lg:top-[6%] lg:right-[-5%] rotate-[2.7deg] flex items-center bg-surface shadow-lg px-[18px] py-[22px] rounded-[26px]"
+      className="absolute top-[70px] right-[-40px] sm:top-[-15%] sm:right-[-10%] md:right-[-7%] lg:top-[6%] lg:right-[-5%] rotate-[2.7deg] flex items-center bg-surface shadow-lg dark:shadow-black/30 px-[18px] py-[22px] rounded-[26px]"
       role="presentation"
     >
-      <div className="text-display-sm text-on-suface">02</div>
+      <div className="text-display-sm text-on-surface">02</div>
       <div className="mx-1 font-normal text-display-sm text-outline">:</div>
-      <div className="text-display-sm text-on-suface">47</div>
-      <div className="mt-3 ml-2 mr-4 text-label text-on-suface-variant">
+      <div className="text-display-sm text-on-surface">47</div>
+      <div className="mt-3 ml-2 mr-4 text-label text-on-surface-variant">
         mins
       </div>
       <div className="relative w-16 h-16 p-4 shadow bg-tertiary-container text-on-tertiary-container rounded-4">

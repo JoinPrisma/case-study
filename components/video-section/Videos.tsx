@@ -9,9 +9,8 @@ const Videos: FC = () => {
           heading: 'Making live teaching a breeze',
           body: 'Prisma LIVE brings together all the content and faciliation tools in one place, freeing up teachers to focus on what matters most: connecting with kids and providing a great learning experience.',
           videoTitle: 'Overview',
-          videoTitleClass:
-            'bg-yellow left-[51px] bottom-[58px] rotate-[-0.81deg]',
-          videoBackground: '#FFD38B',
+          videoTitleClass: 'bg-yellow',
+          videoBackground: 'bg-[#FFD38B] dark:bg-yellow-container',
           videoPoster: 'https://assets.codepen.io/32795/poster.png',
           videoUrl: 'http://media.w3.org/2010/05/sintel/trailer.mp4',
           type: 'A',
@@ -26,7 +25,7 @@ const Videos: FC = () => {
             </div>
           ),
           videoTitleClass: 'bg-green',
-          videoBackground: '#81E088',
+          videoBackground: 'bg-[#81E088] dark:bg-green-container',
           videoPoster: 'https://assets.codepen.io/32795/poster.png',
           videoUrl: 'http://media.w3.org/2010/05/sintel/trailer.mp4',
           type: 'B',
@@ -40,7 +39,7 @@ const Videos: FC = () => {
             </div>
           ),
           videoTitleClass: 'bg-purple',
-          videoBackground: '#E2AEFF',
+          videoBackground: 'bg-[#E2AEFF] dark:bg-purple-container',
           videoPoster: 'https://assets.codepen.io/32795/poster.png',
           videoUrl: 'http://media.w3.org/2010/05/sintel/trailer.mp4',
           type: 'C',
@@ -50,7 +49,7 @@ const Videos: FC = () => {
           body: 'The editor is where live learning experiences are designed. We’ve made it performant and collaborative',
           videoTitle: 'Editor',
           videoTitleClass: 'bg-blue',
-          videoBackground: '#BCD4FF',
+          videoBackground: 'bg-[#BCD4FF] dark:bg-blue-container',
           videoPoster: 'https://assets.codepen.io/32795/poster.png',
           videoUrl: 'http://media.w3.org/2010/05/sintel/trailer.mp4',
           type: 'D',

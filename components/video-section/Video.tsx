@@ -27,8 +27,10 @@ const Video: FC<Props> = ({
 
   return (
     <div
-      className="rounded-4 aspect-video w-full sm:w-4/5 lg:w-[580px] xl:w-[690px] relative flex-shrink-0 sm:overflow-hidden group"
-      style={{ backgroundColor: background }}
+      className={clsx(
+        'rounded-4 aspect-video w-full sm:w-4/5 lg:w-[580px] xl:w-[690px] relative flex-shrink-0 sm:overflow-hidden group',
+        background
+      )}
     >
       <video
         ref={ref}
@@ -37,7 +39,7 @@ const Video: FC<Props> = ({
         width="100%"
         poster={videoPoster}
         className={clsx(
-          'absolute rounded-1 inset-0 sm:ring-[16px] ring-on-surface bg-on-surface transition-transform',
+          'absolute rounded-1 inset-0 sm:ring-[16px] ring-on-surface dark:ring-black bg-black transition-transform',
           !wasPlayed &&
             'group-hover:translate-x-0 group-hover:translate-y-0 group-hover:scale-100 group-hover:rotate-0',
           !wasPlayed && {
@@ -58,11 +60,11 @@ const Video: FC<Props> = ({
       </video>
       <div
         className={clsx(
-          'absolute text-on-secondary shadow-md text-display-lg px-2 py-1.5 rounded-2 pointer-events-none transition-opacity',
+          'absolute text-surface shadow-md text-display-lg px-2 py-1.5 rounded-2 pointer-events-none transition-opacity',
           titleClass,
           wasPlayed ? 'hidden' : 'group-hover:opacity-0',
           {
-            'left-[10%] bottom-[80%] sm:bottom-[20%] rotate-[-0.81deg]':
+            'left-[4%] bottom-[80%] sm:bottom-[11%] rotate-[-0.81deg]':
               type === 'A',
             'rotate-[2deg] left-[5%] bottom-[70%] sm:bottom-[12%]':
               type === 'B',

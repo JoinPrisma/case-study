@@ -62,10 +62,10 @@ const LiveIndicator: FC = () => {
         <div className="w-32 aspect-square rounded-[44px] shadow-xl bg-green text-surface p-4">
           <Icon name="lightning" variant="bold" className="w-full h-full" />
         </div>
-        <div className="rounded-full w-2.5 h-2.5 bg-surface shadow absolute -top-1.5 -left-1.5" />
-        <div className="rounded-full w-2.5 h-2.5 bg-surface shadow absolute -top-1.5 -right-1.5" />
-        <div className="rounded-full w-2.5 h-2.5 bg-surface shadow absolute -bottom-1.5 -left-1.5" />
-        <div className="rounded-full w-2.5 h-2.5 bg-surface shadow absolute -bottom-1.5 -right-1.5">
+        <div className="rounded-full w-2.5 h-2.5 bg-surface dark:bg-green shadow absolute -top-1.5 -left-1.5" />
+        <div className="rounded-full w-2.5 h-2.5 bg-surface dark:bg-green shadow absolute -top-1.5 -right-1.5" />
+        <div className="rounded-full w-2.5 h-2.5 bg-surface dark:bg-green shadow absolute -bottom-1.5 -left-1.5" />
+        <div className="rounded-full w-2.5 h-2.5 bg-surface dark:bg-green shadow absolute -bottom-1.5 -right-1.5">
           <motion.div
             className="relative w-full h-full rotate-[3.92deg] -ml-0.5 hidden md:block"
             initial={{ scale: 2, rotate: -4 }}
