@@ -1,6 +1,6 @@
 import { Icon } from '@joinprisma/components';
 import { motion, useAnimation } from 'framer-motion';
-import { FC, useState } from 'react';
+import { FC, useEffect, useState } from 'react';
 
 const LiveIndicator: FC = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -38,12 +38,24 @@ const LiveIndicator: FC = () => {
     }
   };
 
+  useEffect(() => {
+    cursorAnimation.start(
+      { scale: 1, rotate: 3.92 },
+      { duration: 0.5, ease: 'backOut' }
+    );
+    animation.start(
+      { scale: 1, rotate: -3.92 },
+      { duration: 0.5, ease: 'backOut' }
+    );
+  }, []);
+
   return (
     <motion.div
       className="absolute top-[-25px] left-[68%] sm:left-[calc(50%-64px)] sm:-top-16 w-fit -mt-2 -rotate-[3.92deg] cursor-pointer"
       role="presentation"
       onMouseEnter={playAnimation}
       onPointerDown={playAnimation}
+      initial={{ scale: 0.5, rotate: 4 }}
       animate={animation}
     >
       <div className="relative border-2 w-fit h-fit border-on-surface/30">
@@ -56,6 +68,7 @@ const LiveIndicator: FC = () => {
         <div className="rounded-full w-2.5 h-2.5 bg-surface shadow absolute -bottom-1.5 -right-1.5">
           <motion.div
             className="relative w-full h-full rotate-[3.92deg] -ml-0.5 hidden md:block"
+            initial={{ scale: 2, rotate: -4 }}
             animate={cursorAnimation}
           >
             {/* cursor svg TODO minify */}
