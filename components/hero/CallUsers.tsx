@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import Reaction from './Reaction';
 import SpeakingIndicator from './SpeakingIndicator';
 
 const CallUsers: FC = () => {
@@ -6,12 +7,7 @@ const CallUsers: FC = () => {
     <div className="w-fit absolute top-[440px] sm:top-auto sm:bottom-[3.5%] md:bottom-[8%] lg:bottom-[19%] left-1/2 -translate-x-1/2 grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-1.5 lg:gap-3">
       <div className="w-20 rounded-full shadow-md lg:w-40 aspect-square bg-on-surface/15" />
       <div className="relative w-20 rounded-full shadow-md lg:w-40 aspect-square bg-on-surface/15">
-        <div
-          className="absolute -top-8 -left-12 lg:-top-3 lg:-right-2 rotate-[5.52deg] scale-50 lg:scale-100"
-          style={{ fontSize: 52 }}
-        >
-          👍
-        </div>
+        <Reaction />
       </div>
       <div className="w-20 rounded-full shadow-md lg:w-40 aspect-square bg-on-surface/15" />
       <div className="relative w-20 rounded-full shadow-md lg:w-40 aspect-square bg-on-surface/15">
