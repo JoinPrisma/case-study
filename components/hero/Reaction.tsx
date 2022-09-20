@@ -3,13 +3,21 @@ import { FC, useState } from 'react';
 
 const REACTION_LENGTH_MS = 3000;
 
+const REACTIONS = ['👍', '😍', '✨', '😎'];
+
 const Reaction: FC = () => {
   const [isPlaying, setIsPlaying] = useState(false);
+  const [currentReaction, setCurrentReaction] = useState('👍');
 
   const playAnimation = () => {
     if (!isPlaying) {
       setIsPlaying(true);
-      setTimeout(() => setIsPlaying(false), REACTION_LENGTH_MS);
+      setTimeout(() => {
+        setCurrentReaction(
+          (r) => REACTIONS[(REACTIONS.indexOf(r) + 1) % REACTIONS.length]
+        );
+        setIsPlaying(false);
+      }, REACTION_LENGTH_MS);
     }
   };
 
@@ -29,7 +37,7 @@ const Reaction: FC = () => {
               exit={{ scale: 0, rotate: 5.52 }}
               transition={{ duration: 0.15 }}
             >
-              👍
+              {currentReaction}
             </motion.div>
           )}
         </AnimatePresence>
@@ -80,7 +88,7 @@ const Reaction: FC = () => {
                     },
                   }}
                 >
-                  👍
+                  {currentReaction}
                 </motion.div>
               </div>
             </motion.div>
