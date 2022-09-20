@@ -1,5 +1,4 @@
 import { Icon } from '@joinprisma/components';
-import clsx from 'clsx';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import FeedbackCarousel from '../components/FeedbackCarousel';
@@ -7,6 +6,7 @@ import Heading from '../components/Heading';
 import Hero from '../components/hero/Hero';
 import LinksCarousel from '../components/LinksCarousel';
 import Paragraph from '../components/Paragraph';
+import Videos from '../components/video-section/Videos';
 
 const Home: NextPage = () => {
   return (
@@ -26,83 +26,7 @@ const Home: NextPage = () => {
           />
           <Paragraph text="Prisma LIVE is the custom live learning platform for the Prisma online school. It has been conceived as a strategic bet to differentiate Prisma’s online school offering and make it highly scalable while maintaining teacher quality and learner delight." />
           <FeedbackCarousel />
-
-          {/* Videos */}
-          <ul className="mb-20 space-y-40">
-            {[
-              {
-                heading: 'Making live teaching a breeze',
-                body: 'Prisma LIVE brings together all the content and faciliation tools in one place, freeing up teachers to focus on what matters most: connecting with kids and providing a great learning experience.',
-                videoTitle: 'Overview',
-                videoTitleClass:
-                  'bg-yellow left-[51px] bottom-[58px] rotate-[-0.81deg]',
-                videoBackground: '#FFD38B',
-              },
-              {
-                heading:
-                  'An immersive learning experience, not a stale video conference',
-                body: 'Prisma LIVE turns static lessons into interactive, dynamic experiences that alternate seamlessly and naturally between layouts and interactive elements.',
-                videoTitle: (
-                  <div>
-                    Learner <br /> experience
-                  </div>
-                ),
-                videoTitleClass:
-                  'bg-green rotate-[2deg] left-[50px] bottom-[48px]',
-                videoBackground: '#81E088',
-              },
-              {
-                heading: 'Breakout rooms that aren’t awkward',
-                body: 'We’ve designed our breakout rooms so educators can observe what’s going on without disturbing learners. No more cycling through rooms trying to understand what’s going on. At the same time, learners have all instructions and materials right at their fingertips inside each room.',
-                videoTitle: (
-                  <div>
-                    Breakout <br /> rooms
-                  </div>
-                ),
-                videoTitleClass:
-                  'bg-purple left-[51px] bottom-[61px] rotate-[-0.81deg]',
-                videoBackground: '#E2AEFF',
-              },
-              {
-                heading: 'A collaborative editor for curriculum designers',
-                body: 'The editor is where live learning experiences are designed. We’ve made it performant and collaborative',
-                videoTitle: 'Editor',
-                videoTitleClass:
-                  'bg-blue rotate-[2deg] left-[50px] bottom-[48px]',
-                videoBackground: '#BCD4FF',
-              },
-            ].map((videoData) => (
-              <li
-                className="flex flex-col-reverse items-center lg:flex-row lg:gap-20 lg:odd:flex-row-reverse"
-                key={videoData.heading}
-              >
-                <div className="pt-8 space-y-6 sm:px-10 lg:px-5 xl:px-10">
-                  <h3 className="text-display text-on-surface">
-                    {videoData.heading}
-                  </h3>
-                  <p className="text-outline text-headline">{videoData.body}</p>
-                </div>
-                <div
-                  className="rounded-4 aspect-video w-full sm:w-4/5 lg:w-[580px] xl:w-[690px] relative flex-shrink-0"
-                  style={{ backgroundColor: videoData.videoBackground }}
-                >
-                  <div
-                    className={clsx(
-                      'absolute text-on-secondary shadow-md text-display-lg px-2 py-1.5 rounded-2',
-                      videoData.videoTitleClass
-                    )}
-                    style={{
-                      textShadow:
-                        '0px 22.1px 27.6px rgba(0, 0, 0, 0.1), 0px 8.8px 11px rgba(0, 0, 0, 0.1)',
-                    }}
-                  >
-                    {videoData.videoTitle}
-                  </div>
-                </div>
-              </li>
-            ))}
-          </ul>
-
+          <Videos />
           <LinksCarousel />
 
           {/* learn more section */}
