@@ -24,23 +24,24 @@ const Home: NextPage = () => {
             text="A live learning experience - delightful for kids, powerful for teachers"
             color="yellow"
           />
-          <Paragraph text=" Danish wafer apple pie toffee brownie lemon drops jelly beans marzipan. Sweet roll topping pudding sweet roll icing. Cupcake sweet roll sesame snaps lollipop sweet. Pastry halvah fruitcake cotton candy cake. Jelly soufflé marshmallow halvah cheesecake sweet roll.  Sesame snaps jelly-o sugar plum toffee lemon drops shortbread gingerbread candy gummi bears. Pastry candy canes cake icing candy canes apple pie. Jelly powder jujubes topping pastry jujubes.  Gingerbread candy canes bear claw shortbread halvah donut chocolate." />
+          <Paragraph text="Prisma LIVE is the custom live learning platform for the Prisma online school. It has been conceived as a strategic bet to differentiate Prisma’s online school offering and make it highly scalable while maintaining teacher quality and learner delight." />
           <FeedbackCarousel />
 
           {/* Videos */}
           <ul className="mb-20 space-y-40">
             {[
               {
-                heading: 'Interactive content, all in one place',
-                body: 'Rich, interactive content that follows a story arc. Less distractions for learners, less juggling of materials for coach.',
+                heading: 'Making live teaching a breeze',
+                body: 'Prisma LIVE brings together all the content and faciliation tools in one place, freeing up teachers to focus on what matters most: connecting with kids and providing a great learning experience.',
                 videoTitle: 'Overview',
                 videoTitleClass:
                   'bg-yellow left-[51px] bottom-[58px] rotate-[-0.81deg]',
                 videoBackground: '#FFD38B',
               },
               {
-                heading: 'Easy to use & fun, even for the youngest',
-                body: 'Simple interface for learners, reactions, backgrounds, etc.',
+                heading:
+                  'An immersive learning experience, not a stale video conference',
+                body: 'Prisma LIVE turns static lessons into interactive, dynamic experiences that alternate seamlessly and naturally between layouts and interactive elements.',
                 videoTitle: (
                   <div>
                     Learner <br /> experience
@@ -51,8 +52,8 @@ const Home: NextPage = () => {
                 videoBackground: '#81E088',
               },
               {
-                heading: 'Breakout rooms',
-                body: 'Materials inside breakout rooms, coach can keep the overview from the main room',
+                heading: 'Breakout rooms that aren’t awkward',
+                body: 'We’ve designed our breakout rooms so educators can observe what’s going on without disturbing learners. No more cycling through rooms trying to understand what’s going on. At the same time, learners have all instructions and materials right at their fingertips inside each room.',
                 videoTitle: (
                   <div>
                     Breakout <br /> rooms
@@ -64,7 +65,7 @@ const Home: NextPage = () => {
               },
               {
                 heading: 'A collaborative editor for curriculum designers',
-                body: 'Built to fit the workflow of our designers, fully collaborative and highly performant.',
+                body: 'The editor is where live learning experiences are designed. We’ve made it performant and collaborative',
                 videoTitle: 'Editor',
                 videoTitleClass:
                   'bg-blue rotate-[2deg] left-[50px] bottom-[48px]',
@@ -124,8 +125,8 @@ const Home: NextPage = () => {
             </button>
           </div>
 
-          <Heading text="The people who built it 🚀" color="yellow" />
-          <Paragraph text="Cupcake sweet roll sesame snaps lollipop sweet. Pastry halvah fruitcake cotton candy cake. Jelly soufflé marshmallow halvah cheesecake sweet roll. Sesame snaps jelly-o sugar plum toffee lemon drops shortbread gingerbread candy gummi bears. Pastry candy canes cake icing candy canes apple pie. Jelly powder jujubes topping pastry jujubes. Gingerbread candy canes bear claw shortbread halvah donut chocolate." />
+          <Heading text="The people who built it 🚀" color="purple" />
+          <Paragraph text="Prisma LIVE was built by a team spanning half the globe, from the Czech Republic to Uruguay. Together, we often made the impossible happen and always had fun while doing it." />
 
           <ul className="grid grid-cols-1 mb-40 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-6 place-items-center">
             {[

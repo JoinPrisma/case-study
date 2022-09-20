@@ -6,8 +6,8 @@ const FeedbackCarousel: FC = () => {
       {[
         {
           imageSrc: '',
-          text: 'Gabby has been very happy with her first couple days—and went to sleep last night saying “I cannot wait for school tomorrow!” I think that’s a first',
-          name: 'Mia L.',
+          text: '“Prisma LIVE helps ensure that I am focused on facilitating the best possible workshop for my learners. Everything we need for the session is in one place, and I no longer juggle eight different windows at once!”',
+          name: 'Claire C.',
           roleChip: (
             <span className="bg-coach-container text-on-coach-container px-2 py-0.5 rounded-2">
               Prisma coach
@@ -16,8 +16,8 @@ const FeedbackCarousel: FC = () => {
         },
         {
           imageSrc: '',
-          text: '“I feel much more comfortable and happy with Prisma than with a public school.”',
-          name: 'Emma M.',
+          text: '“Prisma LIVE is cool! It makes learning a lot more fun and interesting than Zoom."',
+          name: 'Ben B.',
           roleChip: (
             <span className="bg-learner-container text-on-learner-container px-2 py-0.5 rounded-2">
               Prisma learner
