@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { FC } from 'react';
 
 const TeamSection: FC = () => {
@@ -5,7 +6,7 @@ const TeamSection: FC = () => {
     <ul className="grid grid-cols-1 mb-40 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-6 place-items-center">
       {[
         {
-          imageUrl: '',
+          imageUrl: '/img/team/andres.png',
           color: '#F5B981',
           name: 'Andrés',
           title: 'Software Engineer',
@@ -16,7 +17,7 @@ const TeamSection: FC = () => {
           },
         },
         {
-          imageUrl: '',
+          imageUrl: '/img/team/andrea.png',
           color: '#FFB4A9',
           name: 'Andrea',
           title: 'Software Engineer',
@@ -26,7 +27,7 @@ const TeamSection: FC = () => {
           },
         },
         {
-          imageUrl: '',
+          imageUrl: '/img/team/alain.png',
           color: '#FFE15E',
           name: 'Alain',
           title: 'Founder & Co-President',
@@ -36,7 +37,7 @@ const TeamSection: FC = () => {
           },
         },
         {
-          imageUrl: '',
+          imageUrl: '/img/team/cabe.png',
           color: '#6DDF77',
           name: 'Juan',
           title: 'Software Engineer',
@@ -47,7 +48,7 @@ const TeamSection: FC = () => {
           },
         },
         {
-          imageUrl: '',
+          imageUrl: '/img/team/dominique.png',
           color: '#FFE15E',
           name: 'Dominique',
           title: 'Product Lead',
@@ -57,7 +58,7 @@ const TeamSection: FC = () => {
           },
         },
         {
-          imageUrl: '',
+          imageUrl: '/img/team/javi.png',
           color: '#FFD480',
           name: 'Javi',
           title: 'Software Engineer',
@@ -67,7 +68,7 @@ const TeamSection: FC = () => {
           },
         },
         {
-          imageUrl: '',
+          imageUrl: '/img/team/diegol.png',
           color: '#85CEFF',
           name: 'Diego',
           title: 'Software Engineer',
@@ -77,7 +78,7 @@ const TeamSection: FC = () => {
           },
         },
         {
-          imageUrl: '',
+          imageUrl: '/img/team/fede.png',
           color: '#6FD8D6',
           name: 'Fede',
           title: 'Software Engineer',
@@ -87,7 +88,7 @@ const TeamSection: FC = () => {
           },
         },
         {
-          imageUrl: '',
+          imageUrl: '/img/team/larry.png',
           color: '#85CEFF',
           name: 'Fabián',
           title: 'Software Engineer',
@@ -97,7 +98,7 @@ const TeamSection: FC = () => {
           },
         },
         {
-          imageUrl: '',
+          imageUrl: '/img/team/dominik.png',
           color: '#F5B981',
           name: 'Dominik',
           title: 'Product Designer',
@@ -107,7 +108,7 @@ const TeamSection: FC = () => {
           },
         },
         {
-          imageUrl: '',
+          imageUrl: '/img/team/martin.png',
           color: '#B38FFF',
           name: 'Martín',
           title: 'Software Engineer',
@@ -117,7 +118,7 @@ const TeamSection: FC = () => {
           },
         },
         {
-          imageUrl: '',
+          imageUrl: '/img/team/leti.png',
           color: '#DB9CFC',
           name: 'Leti',
           title: 'Software Engineer',
@@ -128,11 +129,12 @@ const TeamSection: FC = () => {
         },
       ].map((person) => (
         <li className="w-full space-y-6 h-fit sm:even:translate-y-1/2 md:even:translate-y-0 lg:even:translate-y-20 group">
-          <img
-            src={person.imageUrl}
-            className="mx-auto w-[271px] max-w-[90%] aspect-square rounded-[72px] shadow"
+          <div
+            className="relative mx-auto w-[271px] max-w-[90%] aspect-square rounded-[72px] shadow overflow-clip"
             style={{ background: person.color }}
-          />
+          >
+            <Image src={person.imageUrl} layout="fill" />
+          </div>
           <div className="space-y-2">
             <h3 className="text-center text-display-sm text-on-surface group-hover:-translate-y-[20px] transition-transform">
               {person.name}
