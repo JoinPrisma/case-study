@@ -1,14 +1,22 @@
 import { Icon } from '@joinprisma/components';
 import { FC } from 'react';
 
-const CanvasesList: FC = () => {
+type Props = {
+  setCanvasClass: (value: string | null) => void;
+};
+
+const CanvasesList: FC<Props> = ({ setCanvasClass }) => {
   return (
     <div
       className="absolute space-y-2 left-4 top-3 w-fit text-outline"
       role="presentation"
     >
       <Icon name="hamburger" className="w-6 h-6 mx-auto" />
-      <div className="aspect-[4/3] w-[41px] rounded-1 shadow-md border border-outline/15 bg-orange-container" />
+      <div
+        className="aspect-[4/3] w-[41px] rounded-1 shadow-md border border-outline/15 bg-orange-container cursor-pointer"
+        onMouseEnter={() => setCanvasClass('bg-orange-container')}
+        onMouseLeave={() => setCanvasClass(null)}
+      />
       <div className="aspect-[4/3] w-[41px] rounded-1 shadow-md bg-primary-container flex justify-center items-center text-primary ring-2 ring-primary">
         <svg
           width="19"
@@ -23,9 +31,21 @@ const CanvasesList: FC = () => {
           <path d="M10.6406 12.8422C10.6406 11.7939 11.4905 10.9441 12.5388 10.9441H14.8166C15.8648 10.9441 16.7147 11.7939 16.7147 12.8422V15.12C16.7147 16.1683 15.8648 17.0182 14.8166 17.0182H12.5388C11.4905 17.0182 10.6406 16.1683 10.6406 15.12V12.8422Z" />
         </svg>
       </div>
-      <div className="aspect-[4/3] w-[41px] rounded-1 shadow-md border border-outline/15 bg-teal-container" />
-      <div className="aspect-[4/3] w-[41px] rounded-1 shadow-md border border-outline/15 bg-yellow-container" />
-      <div className="aspect-[4/3] w-[41px] rounded-1 shadow-md border border-outline/15 bg-yellow-container" />
+      <div
+        className="aspect-[4/3] w-[41px] rounded-1 shadow-md border border-outline/15 bg-teal-container cursor-pointer"
+        onMouseEnter={() => setCanvasClass('bg-teal-container')}
+        onMouseLeave={() => setCanvasClass(null)}
+      />
+      <div
+        className="aspect-[4/3] w-[41px] rounded-1 shadow-md border border-outline/15 bg-yellow-container cursor-pointer"
+        onMouseEnter={() => setCanvasClass('bg-yellow-container')}
+        onMouseLeave={() => setCanvasClass(null)}
+      />
+      <div
+        className="aspect-[4/3] w-[41px] rounded-1 shadow-md border border-outline/15 bg-pink-container cursor-pointer"
+        onMouseEnter={() => setCanvasClass('bg-pink-container')}
+        onMouseLeave={() => setCanvasClass(null)}
+      />
       <div className="aspect-[4/3] w-[41px] rounded-1 shadow-md bg-background flex justify-center items-center">
         <svg
           width="19"
@@ -40,7 +60,11 @@ const CanvasesList: FC = () => {
           <path d="M10.6406 12.8422C10.6406 11.7939 11.4905 10.9441 12.5388 10.9441H14.8166C15.8648 10.9441 16.7147 11.7939 16.7147 12.8422V15.12C16.7147 16.1683 15.8648 17.0182 14.8166 17.0182H12.5388C11.4905 17.0182 10.6406 16.1683 10.6406 15.12V12.8422Z" />
         </svg>
       </div>
-      <div className="aspect-[4/3] w-[41px] rounded-1 shadow-md border border-outline/15 bg-blue-container" />
+      <div
+        className="aspect-[4/3] w-[41px] rounded-1 shadow-md border border-outline/15 bg-blue-container cursor-pointer"
+        onMouseEnter={() => setCanvasClass('bg-blue-container')}
+        onMouseLeave={() => setCanvasClass(null)}
+      />
     </div>
   );
 };

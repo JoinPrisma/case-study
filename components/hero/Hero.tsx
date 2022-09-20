@@ -1,4 +1,5 @@
-import { FC } from 'react';
+import clsx from 'clsx';
+import { FC, useState } from 'react';
 import BreakoutRoom from './BreakoutRoom';
 import CallToolbar from './CallToolbar';
 import CallUsers from './CallUsers';
@@ -11,9 +12,16 @@ import Poll from './Poll';
 import Timer from './Timer';
 
 const Hero: FC = () => {
+  const [canvasClass, setCanvasClass] = useState<string | null>(null);
+
   return (
     <header>
-      <div className="mx-auto sm:mt-40 w-full sm:w-[calc(100%-32px)] md:w-[calc(100%-48px)] min-h-[735px] sm:min-h-0 sm:h-auto max-w-[1143px] sm:aspect-[16/10] ring-on-surface sm:ring-[8px] md:ring-[16px] border-on-surface rounded-[24px] relative">
+      <div
+        className={clsx(
+          'mx-auto sm:mt-40 w-full sm:w-[calc(100%-32px)] md:w-[calc(100%-48px)] min-h-[735px] sm:min-h-0 sm:h-auto max-w-[1143px] sm:aspect-[16/10] ring-on-surface sm:ring-[8px] md:ring-[16px] border-on-surface rounded-[24px] relative transition-colors transition-500',
+          canvasClass
+        )}
+      >
         <h1 className="pt-[185px] sm:pt-[70px] md:pt-[96px] mb-12 font-bold text-center text-display-lg text-on-surface sm:scale-[133%]">
           {/* make larger with transform */}
           Introducing <br />
@@ -24,7 +32,7 @@ const Hero: FC = () => {
           virtually.
         </p>
         <div className="hidden md:contents">
-          <CanvasesList />
+          <CanvasesList setCanvasClass={setCanvasClass} />
           <Chat />
         </div>
         <BreakoutRoom />
