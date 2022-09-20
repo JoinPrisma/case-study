@@ -7,7 +7,7 @@ const SpeakingIndicator: FC = () => {
         viewBox="0 0 294 308"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="absolute left-[-40%] top-[-40%] -z-1 w-[180%] animate-[spin_5s_linear_infinite]"
+        className="absolute left-[-40%] top-[-40%] -z-1 w-[180%] animate-[spin_5s_linear_infinite] pointer-events-none"
       >
         <path
           opacity="0.5"
@@ -31,7 +31,7 @@ const SpeakingIndicator: FC = () => {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
-        className="absolute left-[-47%] top-[-47%] -z-1 w-[194%] animate-[reverse-spin_5s_linear_infinite]"
+        className="absolute left-[-47%] top-[-47%] -z-1 w-[194%] animate-[reverse-spin_5s_linear_infinite] pointer-events-none"
         viewBox="0 0 311 313"
       >
         <path
