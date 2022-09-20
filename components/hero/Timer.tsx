@@ -4,7 +4,7 @@ import { FC } from 'react';
 const Timer: FC = () => {
   return (
     <div
-      className="absolute top-[6%] right-[-5%] rotate-[2.7deg] flex items-center bg-surface shadow-lg px-[18px] py-[22px] rounded-[26px]"
+      className="absolute top-[70px] right-[-40px] sm:top-[-15%] sm:right-[-10%] md:right-[-7%] lg:top-[6%] lg:right-[-5%] rotate-[2.7deg] flex items-center bg-surface shadow-lg px-[18px] py-[22px] rounded-[26px]"
       role="presentation"
     >
       <div className="text-display-sm text-on-suface">02</div>
@@ -16,7 +16,7 @@ const Timer: FC = () => {
       <div className="relative w-16 h-16 p-4 shadow bg-tertiary-container text-on-tertiary-container rounded-4">
         <Icon name="playback" variant="pause" className="w-full h-full" />
         <div className="absolute left-11 top-12">
-          <div className="relative w-full h-full -rotate-[2.7deg] -ml-0.5">
+          <div className="relative w-full h-full -rotate-[2.7deg] -ml-0.5 hidden lg:block">
             {/* cursor svg TODO minify */}
             <svg
               width="28"

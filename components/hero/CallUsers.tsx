@@ -2,25 +2,23 @@ import { FC } from 'react';
 
 const CallUsers: FC = () => {
   return (
-    <div className="absolute bottom-[19%] left-1/2 -translate-x-1/2 flex gap-3">
-      <div className="w-40 h-40 rounded-full shadow-md bg-on-surface/15" />
-      <div className="relative w-40 h-40 rounded-full shadow-md bg-on-surface/15">
+    <div className="w-fit absolute top-[440px] sm:top-auto sm:bottom-[3.5%] md:bottom-[8%] lg:bottom-[19%] left-1/2 -translate-x-1/2 grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-1.5 lg:gap-3">
+      <div className="w-20 rounded-full shadow-md lg:w-40 aspect-square bg-on-surface/15" />
+      <div className="relative w-20 rounded-full shadow-md lg:w-40 aspect-square bg-on-surface/15">
         <div
-          className="absolute -top-3 -right-2 rotate-[5.52deg]"
+          className="absolute -top-8 -left-12 lg:-top-3 lg:-right-2 rotate-[5.52deg] scale-50 lg:scale-100"
           style={{ fontSize: 52 }}
         >
           👍
         </div>
       </div>
-      <div className="w-40 h-40 rounded-full shadow-md bg-on-surface/15" />
-      <div className="relative w-40 h-40 rounded-full shadow-md bg-on-surface/15">
+      <div className="w-20 rounded-full shadow-md lg:w-40 aspect-square bg-on-surface/15" />
+      <div className="relative w-20 rounded-full shadow-md lg:w-40 aspect-square bg-on-surface/15">
         <svg
-          width="294"
-          height="308"
           viewBox="0 0 294 308"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="absolute -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 -z-1"
+          className="absolute -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 -z-1 w-[180%]"
         >
           <path
             opacity="0.5"
@@ -42,12 +40,10 @@ const CallUsers: FC = () => {
           </defs>
         </svg>
         <svg
-          width="311"
-          height="313"
           viewBox="0 0 311 313"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="absolute -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 -z-1"
+          className="absolute -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 -z-1 w-[194%]"
         >
           <path
             opacity="0.5"

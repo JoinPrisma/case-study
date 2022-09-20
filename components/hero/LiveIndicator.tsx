@@ -4,7 +4,7 @@ import { FC } from 'react';
 const LiveIndicator: FC = () => {
   return (
     <div
-      className="absolute top-0 -translate-x-1/2 -translate-y-1/2 w-fit left-1/2 -rotate-[3.92deg] -mt-2"
+      className="absolute top-[-5px] left-[68%] sm:left-1/2 sm:top-0 sm:-translate-x-1/2 sm:-translate-y-1/2 w-fit -rotate-[3.92deg] -mt-2"
       role="presentation"
     >
       <div className="relative border-2 w-fit h-fit border-on-surface/30">
@@ -15,7 +15,7 @@ const LiveIndicator: FC = () => {
         <div className="rounded-full w-2.5 h-2.5 bg-surface shadow absolute -top-1.5 -right-1.5" />
         <div className="rounded-full w-2.5 h-2.5 bg-surface shadow absolute -bottom-1.5 -left-1.5" />
         <div className="rounded-full w-2.5 h-2.5 bg-surface shadow absolute -bottom-1.5 -right-1.5">
-          <div className="relative w-full h-full rotate-[3.92deg] -ml-0.5">
+          <div className="relative w-full h-full rotate-[3.92deg] -ml-0.5 hidden md:block">
             {/* cursor svg TODO minify */}
             <svg
               width="28"

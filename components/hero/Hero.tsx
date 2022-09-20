@@ -13,27 +13,27 @@ import Timer from './Timer';
 const Hero: FC = () => {
   return (
     <header>
-      <div className="pt-[96px] mx-auto mt-40 w-[calc(100%-48px)] max-w-[1143px] aspect-[16/10] ring-on-surface ring-[16px] border-on-surface rounded-[24px] relative">
-        <LiveIndicator />
-        <ChatMessage />
-        <CanvasesList />
-        <BreakoutRoom />
-        <Timer />
-        <Poll />
-        <h1
-          className="mb-8 font-bold text-center text-display-lg text-on-surface"
-          style={{ fontSize: 80, lineHeight: '110%' }}
-        >
+      <div className="mx-auto sm:mt-40 w-full sm:w-[calc(100%-32px)] md:w-[calc(100%-48px)] h-screen sm:h-auto max-w-[1143px] sm:aspect-[16/10] ring-on-surface sm:ring-[8px] md:ring-[16px] border-on-surface rounded-[24px] relative">
+        <h1 className="pt-[185px] sm:pt-[70px] md:pt-[96px] mb-12 font-bold text-center text-display-lg text-on-surface sm:scale-[133%]">
+          {/* make larger with transform */}
           Introducing <br />
           Prisma Live
         </h1>
-        <p className="max-w-xl mx-auto text-center text-on-surface-variant text-headline">
+        <p className="max-w-xl px-1 mx-auto text-center text-on-surface-variant text-headline">
           A new, fun and engaging way for kids to learn and collaborate together
           virtually.
         </p>
-        <CallUsers />
+        <div className="hidden md:contents">
+          <CanvasesList />
+          <Chat />
+        </div>
+        <BreakoutRoom />
+        <LiveIndicator />
+        <ChatMessage />
+        <Timer />
         <CallToolbar />
-        <Chat />
+        <Poll />
+        <CallUsers />
         <LearnerCursor />
       </div>
     </header>

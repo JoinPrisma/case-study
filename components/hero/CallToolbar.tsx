@@ -4,7 +4,7 @@ import { FC } from 'react';
 const CallToolbar: FC = () => {
   return (
     <div
-      className="absolute -translate-x-1/2 w-fit left-1/2 bottom-3"
+      className="absolute hidden -translate-x-1/2 sm:block w-fit left-1/2 sm:-bottom-16 md:-bottom-8 lg:bottom-3"
       role="presentation"
     >
       <Toolbar name="">

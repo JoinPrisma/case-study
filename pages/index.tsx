@@ -19,7 +19,7 @@ const Home: NextPage = () => {
 
       <div className="overflow-x-clip">
         <Hero />
-        <main className="px-2 md:px-6 pt-40 mx-auto max-w-[1392px]">
+        <main className="px-2 md:px-6 pt-20 sm:pt-40 mx-auto max-w-[1392px]">
           <Heading
             text="A live learning experience - delightful for kids, powerful for teachers"
             color="yellow"
