@@ -15,10 +15,10 @@ const Poll: FC = () => {
       </div>
       <div
         className={clsx(
-          'flex items-center gap-3 p-2 rounded-3 cursor-pointer mb-1 transition-colors',
+          'flex items-center gap-3 p-2 rounded-3 mb-1 transition-colors',
           selectedIndex === 0
             ? 'bg-violet text-surface shadow-md'
-            : 'bg-violet-container hover:bg-violet-container-hover text-on-surface-variant'
+            : 'bg-violet-container hover:bg-violet-container-hover text-on-surface-variant cursor-pointer'
         )}
         onClick={() => setSelectedIndex(0)}
       >
@@ -31,10 +31,10 @@ const Poll: FC = () => {
       </div>
       <div
         className={clsx(
-          'flex items-center gap-3 p-2 rounded-3 cursor-pointer mb-1 transition-colors',
+          'flex items-center gap-3 p-2 rounded-3 mb-1 transition-colors',
           selectedIndex === 1
             ? 'bg-green text-surface shadow-md'
-            : 'bg-green-container hover:bg-green-container-hover text-on-surface-variant'
+            : 'bg-green-container hover:bg-green-container-hover text-on-surface-variant cursor-pointer'
         )}
         onClick={() => setSelectedIndex(1)}
       >
@@ -47,10 +47,10 @@ const Poll: FC = () => {
       </div>
       <div
         className={clsx(
-          'flex items-center gap-3 p-2 rounded-3 cursor-pointer transition-colors',
+          'flex items-center gap-3 p-2 rounded-3 transition-colors',
           selectedIndex === 2
             ? 'bg-yellow text-surface'
-            : 'bg-yellow-container hover:bg-yellow-container-hover text-on-surface-variant'
+            : 'bg-yellow-container hover:bg-yellow-container-hover text-on-surface-variant cursor-pointer'
         )}
         onClick={() => setSelectedIndex(2)}
       >
