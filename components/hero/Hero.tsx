@@ -28,9 +28,9 @@ const Hero: FC = () => {
           <Chat />
         </div>
         <BreakoutRoom />
-        <LiveIndicator />
         <ChatMessage />
         <Timer />
+        <LiveIndicator />
         <CallToolbar />
         <Poll />
         <CallUsers />
