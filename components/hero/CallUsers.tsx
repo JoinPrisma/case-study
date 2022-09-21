@@ -11,6 +11,7 @@ const CallUsers: FC = () => {
           src="/img/hero/avatar-1.png"
           layout="fill"
           className="z-20 rounded-full overflow-clip"
+          alt=""
         />
       </div>
       <div className="relative w-20 rounded-full shadow-md lg:w-40 aspect-square bg-on-surface/15">
@@ -18,6 +19,7 @@ const CallUsers: FC = () => {
           src="/img/hero/avatar-2.png"
           layout="fill"
           className="z-20 rounded-full pointer-events-none overflow-clip"
+          alt=""
         />
         <Reaction />
       </div>
@@ -26,6 +28,7 @@ const CallUsers: FC = () => {
           src="/img/hero/avatar-3.png"
           layout="fill"
           className="z-20 rounded-full overflow-clip"
+          alt=""
         />
       </div>
       <div className="relative w-20 rounded-full shadow-md lg:w-40 aspect-square bg-on-surface/15">
@@ -34,6 +37,7 @@ const CallUsers: FC = () => {
           src="/img/hero/avatar-4.png"
           layout="fill"
           className="rounded-full overflow-clip"
+          alt=""
         />
       </div>
     </div>

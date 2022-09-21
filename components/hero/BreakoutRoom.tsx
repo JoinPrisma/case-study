@@ -20,6 +20,7 @@ const BreakoutRoom: FC = () => {
             src="/img/hero/avatar-room-1.png"
             layout="fill"
             className="rounded-4 lg:rounded-[26px] overflow-clip"
+            alt=""
           />
         </div>
         <div className="relative bg-on-surface/15 w-20 lg:w-[117px] aspect-square rounded-4 lg:rounded-[26px] shadow-md">
@@ -27,6 +28,7 @@ const BreakoutRoom: FC = () => {
             src="/img/hero/avatar-room-2.png"
             layout="fill"
             className="rounded-4 lg:rounded-[26px] overflow-clip"
+            alt=""
           />
         </div>
 
@@ -35,6 +37,7 @@ const BreakoutRoom: FC = () => {
             src="/img/hero/avatar-room-3.png"
             layout="fill"
             className="rounded-4 lg:rounded-[26px] overflow-clip"
+            alt=""
           />
         </div>
 
@@ -43,6 +46,7 @@ const BreakoutRoom: FC = () => {
             src="/img/hero/avatar-room-4.png"
             layout="fill"
             className="rounded-4 lg:rounded-[26px] overflow-clip"
+            alt=""
           />
           <div className="rotate-[2.82deg] absolute w-7 lg:w-10 aspect-square p-1 lg:p-1.5 shadow -top-1.5 -right-1.5 bg-tertiary-container text-on-tertiary-container rounded-2">
             <Icon name="hand" className="w-full h-full" />
