@@ -54,7 +54,7 @@ const FeedbackCarousel: FC = () => {
             className="relative overflow-clip rounded-[32px] w-20 h-20 shadow-lg bg-on-surface/8"
             role="presentation"
           >
-            <Image src={cardData.imageSrc} layout="fill" />
+            <Image src={cardData.imageSrc} layout="fill" alt={cardData.name} />
           </div>
           <p className="whitespace-normal text-headline text-on-surface-variant">
             {cardData.text}

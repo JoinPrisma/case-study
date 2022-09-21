@@ -136,17 +136,17 @@ const TeamSection: FC = () => {
             className="relative mx-auto w-[271px] max-w-[90%] aspect-square rounded-[72px] shadow overflow-clip"
             style={{ background: person.color }}
           >
-            <Image src={person.imageUrl} layout="fill" />
+            <Image src={person.imageUrl} layout="fill" alt={person.name} />
           </div>
           <div className="space-y-2">
-            <h3 className="text-center text-display-sm text-on-surface group-hover:-translate-y-[20px] transition-transform">
+            <h3 className="text-center text-display-sm text-on-surface group-hover:-translate-y-[20px] focus-within:-translate-y-[-20px] transition-transform">
               {person.name}
             </h3>
             <div className="grid grid-cols-1 h-fit">
-              <p className="col-start-1 row-start-1 text-center text-body text-outline group-hover:-translate-y-[20px] transition-transform">
+              <p className="col-start-1 row-start-1 text-center text-body text-outline group-hover:-translate-y-[20px] focus-within:-translate-y-[-20px] transition-transform">
                 {person.title}
               </p>
-              <p className="col-start-1 row-start-1 text-center transition-opacity rounded opacity-0 text-body text-outline group-hover:opacity-100">
+              <p className="col-start-1 row-start-1 text-center transition-opacity rounded opacity-0 text-body text-outline group-hover:opacity-100 focus-within:opacity-100">
                 & {person.funTitle}
               </p>
             </div>
