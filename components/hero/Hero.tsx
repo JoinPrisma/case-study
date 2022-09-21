@@ -24,8 +24,9 @@ const Hero: FC = () => {
       >
         <h1 className="pt-[185px] sm:pt-[70px] md:pt-[96px] mb-12 font-bold text-center text-display-lg text-on-surface sm:scale-[133%]">
           {/* make larger with transform */}
-          Introducing <br />
-          Prisma Live
+          Prisma LIVE
+          <br />
+          Case Study
         </h1>
         <p className="max-w-xl px-1 mx-auto text-center text-on-surface-variant text-headline">
           A new, fun and engaging way for kids to learn and collaborate together
