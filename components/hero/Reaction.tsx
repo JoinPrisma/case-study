@@ -31,7 +31,7 @@ const Reaction: FC = () => {
         <AnimatePresence>
           {!isPlaying && (
             <motion.div
-              className="absolute scale-50 -top-6 -right-4 lg:-top-3 lg:-right-2 text-display-lg"
+              className="absolute z-30 scale-50 -top-6 -right-4 lg:-top-3 lg:-right-2 text-display-lg"
               initial={{ scale: 0, rotate: -60 }}
               animate={{ scale: 1, rotate: 5.52 }}
               exit={{ scale: 0, rotate: 5.52 }}
