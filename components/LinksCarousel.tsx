@@ -43,7 +43,12 @@ const LinksCarousel: FC = () => {
             </p>
           )}
           <div className="flex justify-end underline cursor-pointer text-on-surface-variant hover:text-on-surface-variant-hover active:text-on-surface-variant-active text-body">
-            <a className="flex gap-2" href={cardData.linkUrl} target="_blank">
+            <a
+              className="flex gap-2"
+              href={cardData.linkUrl}
+              target="_blank"
+              rel="noreferrer"
+            >
               {cardData.linkText}
               <Icon className="w-6 h-6" name="arrow" variant="right" />
             </a>

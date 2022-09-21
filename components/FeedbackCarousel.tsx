@@ -46,7 +46,10 @@ const FeedbackCarousel: FC = () => {
           ),
         },
       ].map((cardData) => (
-        <li className="inline-block p-10 rounded-[48px] shadow space-y-8 bg-surface w-full first:ml-0 last:mr-0 mx-4 max-w-[439px] h-fit flex-shrink-0 snap-center">
+        <li
+          key={cardData.name}
+          className="inline-block p-10 rounded-[48px] shadow space-y-8 bg-surface w-full first:ml-0 last:mr-0 mx-4 max-w-[439px] h-fit flex-shrink-0 snap-center"
+        >
           <div
             className="relative overflow-clip rounded-[32px] w-20 h-20 shadow-lg bg-on-surface/8"
             role="presentation"

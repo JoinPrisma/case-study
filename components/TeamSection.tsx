@@ -155,6 +155,7 @@ const TeamSection: FC = () => {
                 href={`https://www.linkedin.com/in/${person.social.linkedin}/`}
                 className="relative flex items-center justify-center flex-shrink-0 w-12 h-12 overflow-hidden transition-colors border rounded-full border-outline/15 hover:text-surface"
                 target="_blank"
+                rel="noreferrer"
               >
                 <div
                   className="absolute inset-0 transition-opacity opacity-0 hover:opacity-100 -z-1"
@@ -176,6 +177,7 @@ const TeamSection: FC = () => {
                 href={person.social.twitter}
                 className="relative flex items-center justify-center flex-shrink-0 w-12 h-12 overflow-hidden transition-colors border rounded-full border-outline/15 hover:text-surface"
                 target="_blank"
+                rel="noreferrer"
               >
                 <div
                   className="absolute inset-0 transition-opacity opacity-0 hover:opacity-80 -z-1"
