@@ -31,7 +31,7 @@ const LinksCarousel: FC = () => {
         },
       ].map((cardData, index) => (
         <li
-          className="px-10 snap-center py-8 rounded-[48px] first:shadow space-y-6 first:ml-0 last:mr-0 mx-2 bg-outline/12 first:bg-surface w-full max-w-[420px] h-fit flex-shrink-0"
+          className="px-10 snap-center py-8 rounded-[48px] first:shadow space-y-6 first:ml-0 last:mr-0 mx-2 bg-outline/12 first:bg-surface w-[420px] max-w-[calc(100vw-52px)] h-fit flex-shrink-0"
           key={index}
         >
           <h3 className="whitespace-normal text-display-sm text-on-surface">
