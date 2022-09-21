@@ -30,8 +30,8 @@ const FeedbackCarousel: FC = () => {
           text: '“Prisma LIVE is a total game changer! It puts the students and teachers first, which makes it feel like an extension of yourself and not a clunky tool.”',
           name: 'James M.',
           roleChip: (
-            <span className="bg-yellow-container text-on-yellow-container px-2 py-0.5 rounded-2">
-              Prisma curriculum designer
+            <span className="bg-coach-container text-on-coach-container px-2 py-0.5 rounded-2">
+              Prisma coach
             </span>
           ),
         },
