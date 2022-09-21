@@ -12,7 +12,7 @@ const TeamSection: FC = () => {
           title: 'Software Engineer',
           funTitle: 'Rich Text Editor Ninja 🥷',
           social: {
-            linkedin: '',
+            linkedin: 'andresvidalberriel',
             twitter: '',
           },
         },
@@ -22,7 +22,7 @@ const TeamSection: FC = () => {
           name: 'Andrea',
           title: 'Software Engineer',
           social: {
-            linkedin: '',
+            linkedin: 'aphillipsr',
             twitter: '',
           },
         },
@@ -32,7 +32,7 @@ const TeamSection: FC = () => {
           name: 'Alain',
           title: 'Founder & Co-President',
           social: {
-            linkedin: '',
+            linkedin: 'alainchuard',
             twitter: '',
           },
         },
@@ -43,7 +43,7 @@ const TeamSection: FC = () => {
           title: 'Software Engineer',
           funTitle: 'Chief Firefighter 🚒',
           social: {
-            linkedin: '',
+            linkedin: 'ijuanignaciolarrambebere',
             twitter: '',
           },
         },
@@ -53,7 +53,7 @@ const TeamSection: FC = () => {
           name: 'Dominique',
           title: 'Product Lead',
           social: {
-            linkedin: '',
+            linkedin: 'dominique-kunz',
             twitter: '',
           },
         },
@@ -63,7 +63,7 @@ const TeamSection: FC = () => {
           name: 'Javi',
           title: 'Software Engineer',
           social: {
-            linkedin: '',
+            linkedin: 'javierm42',
             twitter: '',
           },
         },
@@ -73,7 +73,7 @@ const TeamSection: FC = () => {
           name: 'Diego',
           title: 'Software Engineer',
           social: {
-            linkedin: '',
+            linkedin: 'acostami',
             twitter: '',
           },
         },
@@ -103,7 +103,7 @@ const TeamSection: FC = () => {
           name: 'Dominik',
           title: 'Product Designer',
           social: {
-            linkedin: '',
+            linkedin: 'dominik-kandrav%C3%BD-7485b9190',
             twitter: '',
           },
         },
@@ -113,7 +113,7 @@ const TeamSection: FC = () => {
           name: 'Martín',
           title: 'Software Engineer',
           social: {
-            linkedin: '',
+            linkedin: 'feldman22',
             twitter: '',
           },
         },
@@ -123,7 +123,7 @@ const TeamSection: FC = () => {
           name: 'Leti',
           title: 'Software Engineer',
           social: {
-            linkedin: '',
+            linkedin: 'leticia-errandonea',
             twitter: '',
           },
         },
@@ -149,7 +149,7 @@ const TeamSection: FC = () => {
             </div>
             <div className="flex justify-center gap-2">
               <a
-                href={person.social.linkedin}
+                href={`https://www.linkedin.com/in/${person.social.linkedin}/`}
                 className="relative flex items-center justify-center flex-shrink-0 w-12 h-12 overflow-hidden transition-colors border rounded-full border-outline/15 hover:text-surface"
                 target="_blank"
               >
