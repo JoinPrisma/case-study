@@ -11,8 +11,8 @@ const ChatMessage: FC = () => {
         className="text-body text-on-surface-variant"
         style={{ fontSize: 18 }}
       >
-        Cool <span className="font-bold text-primary">@Amy</span>! I can't wait
-        to screen share my project 🤣
+        Cool <span className="font-bold text-primary">@Amy</span>! I can&apos;t
+        wait to screen share my project 🤣
       </div>
     </div>
   );

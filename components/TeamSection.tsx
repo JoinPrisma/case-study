@@ -128,7 +128,10 @@ const TeamSection: FC = () => {
           },
         },
       ].map((person) => (
-        <li className="w-full space-y-6 h-fit sm:even:translate-y-1/2 md:even:translate-y-0 lg:even:translate-y-20 group">
+        <li
+          className="w-full space-y-6 h-fit sm:even:translate-y-1/2 md:even:translate-y-0 lg:even:translate-y-20 group"
+          key={person.name}
+        >
           <div
             className="relative mx-auto w-[271px] max-w-[90%] aspect-square rounded-[72px] shadow overflow-clip"
             style={{ background: person.color }}
