@@ -13,7 +13,7 @@ const LinksCarousel: FC = () => {
         // },
         {
           heading: 'How our collaborative editor works',
-          text: 'A series of articles on inspired by how we built a collaborative conflict-free editor.',
+          text: 'A series of articles inspired by how we built a collaborative conflict-free editor.',
           linkText: 'Read part 1 now',
           linkUrl:
             'https://www.streaver.com/blog/posts/crdts-and-distributed-consistency-part-1-building-a-distributed-counter',
