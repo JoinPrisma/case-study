@@ -14,7 +14,10 @@ const Home: NextPage = () => {
       <Head>
         <meta lang="en" />
         <title>Prisma LIVE Case Study</title>
-        <meta name="description" content="Prisma LIVE" />
+        <meta
+          name="description"
+          content="A showcase of Prisma's live learning platform, purpose-built for kids"
+        />
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="apple-touch-icon"
