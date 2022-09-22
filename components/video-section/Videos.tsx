@@ -11,8 +11,9 @@ const Videos: FC = () => {
           videoTitle: 'Overview',
           videoTitleClass: 'bg-yellow',
           videoBackground: 'bg-[#FFD38B] dark:bg-yellow-container',
-          videoPoster: 'https://assets.codepen.io/32795/poster.png',
-          videoUrl: 'http://media.w3.org/2010/05/sintel/trailer.mp4',
+          videoPoster: '/img/video_posters/overview-poster.png',
+          videoUrl:
+            'https://github.com/JoinPrisma/case-study/blob/main/public/videos/overview.mp4?raw=true',
           type: 'A',
         },
         {
@@ -26,8 +27,9 @@ const Videos: FC = () => {
           ),
           videoTitleClass: 'bg-green',
           videoBackground: 'bg-[#81E088] dark:bg-green-container',
-          videoPoster: 'https://assets.codepen.io/32795/poster.png',
-          videoUrl: 'http://media.w3.org/2010/05/sintel/trailer.mp4',
+          videoPoster: '/img/video_posters/learner-experience-poster.png',
+          videoUrl:
+            'https://github.com/JoinPrisma/case-study/blob/main/public/videos/learner-experience.mp4?raw=true',
           type: 'B',
         },
         {
@@ -40,8 +42,9 @@ const Videos: FC = () => {
           ),
           videoTitleClass: 'bg-purple',
           videoBackground: 'bg-[#E2AEFF] dark:bg-purple-container',
-          videoPoster: 'https://assets.codepen.io/32795/poster.png',
-          videoUrl: 'http://media.w3.org/2010/05/sintel/trailer.mp4',
+          videoPoster: '/img/video_posters/breakout-rooms-poster.png',
+          videoUrl:
+            'https://github.com/JoinPrisma/case-study/blob/main/public/videos/rooms.mp4?raw=true',
           type: 'C',
         },
         {
@@ -50,8 +53,9 @@ const Videos: FC = () => {
           videoTitle: 'Editor',
           videoTitleClass: 'bg-blue',
           videoBackground: 'bg-[#BCD4FF] dark:bg-blue-container',
-          videoPoster: 'https://assets.codepen.io/32795/poster.png',
-          videoUrl: 'http://media.w3.org/2010/05/sintel/trailer.mp4',
+          videoPoster: '/img/video_posters/editor-poster.png',
+          videoUrl:
+            'https://github.com/JoinPrisma/case-study/blob/main/public/videos/editor.mp4?raw=true',
           type: 'D',
         },
       ].map((videoData) => (
