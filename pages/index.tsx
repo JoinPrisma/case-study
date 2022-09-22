@@ -68,9 +68,21 @@ const Home: NextPage = () => {
           <TeamSection />
         </main>
 
-        <footer className="border-t border-outline/15 px-2 md:px-6 mx-auto max-w-[1392px]">
-          <div className="py-10 tracking-wide text-outline text-body-sm">
+        <footer className="border-t border-outline/15 px-2 md:px-6 mx-auto max-w-[1392px] text-outline text-body-sm flex justify-around items-center py-10">
+          <div className="tracking-wide">
             © 2022 Prisma. All rights reserved.
+          </div>
+          <div>
+            Credit to{' '}
+            <a
+              href="https://www.FesliyanStudios.com"
+              rel="noreferrer"
+              className="underline"
+              target="_blank"
+            >
+              Fesliyan Studios
+            </a>{' '}
+            for the background music.
           </div>
         </footer>
       </div>
