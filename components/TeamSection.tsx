@@ -43,7 +43,7 @@ const TeamSection: FC = () => {
           title: 'Software Engineer',
           funTitle: 'Chief Firefighter 🚒',
           social: {
-            linkedin: 'ijuanignaciolarrambebere',
+            linkedin: 'juanignaciolarrambebere',
             twitter: '',
           },
         },
