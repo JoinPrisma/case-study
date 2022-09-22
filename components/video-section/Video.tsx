@@ -28,7 +28,7 @@ const Video: FC<Props> = ({
   return (
     <div
       className={clsx(
-        'rounded-4 aspect-video w-full sm:w-4/5 lg:w-[580px] xl:w-[690px] relative flex-shrink-0 sm:overflow-hidden group',
+        'rounded-4 aspect-[16/10] w-full sm:w-4/5 lg:w-[580px] xl:w-[690px] relative flex-shrink-0 sm:overflow-hidden group',
         background
       )}
     >
@@ -41,7 +41,7 @@ const Video: FC<Props> = ({
         className={clsx(
           'absolute rounded-1 inset-0 sm:ring-[16px] ring-on-surface dark:ring-black bg-black transition-transform',
           !wasPlayed &&
-            'group-hover:translate-x-0 group-hover:translate-y-0 group-hover:scale-100 group-hover:rotate-0',
+            'group-hover:translate-x-0 group-hover:translate-y-0 group-hover:scale-100 group-hover:rotate-0 cursor-pointer',
           !wasPlayed && {
             'sm:rotate-[2.34deg] sm:translate-x-[5px] sm:translate-y-[-35px] sm:scale-[85%]':
               type === 'A',
