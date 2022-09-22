@@ -20,9 +20,9 @@ const LearnerCursor: FC = () => {
             <path
               d="M14.8356 21.1561C14.2433 22.4651 12.3753 22.4389 11.82 21.1138L5.26813 5.47838C4.69517 4.11105 6.0814 2.74316 7.44098 3.33428L22.5124 9.88709C23.7944 10.4445 23.8408 12.2456 22.5892 12.8682L17.947 15.1775C17.6077 15.3463 17.3372 15.627 17.181 15.9722L14.8356 21.1561Z"
               stroke="white"
-              stroke-width="1.26479"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="1.26479"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </g>
           <defs>
