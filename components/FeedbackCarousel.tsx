@@ -26,22 +26,22 @@ const FeedbackCarousel: FC = () => {
           ),
         },
         {
+          imageSrc: '/img/feedback/helen.png',
+          text: 'Prisma LIVE is a one-stop shop for all that is needed to design a meaningful live experience. Everything is seamlessly integrated into the program, which results in our learners spending less time navigating to content and more time exploring content.',
+          name: 'Helen R.',
+          roleChip: (
+            <span className="bg-yellow-container text-on-surface/80 px-2 py-0.5 rounded-2">
+              Prisma curriculum designer
+            </span>
+          ),
+        },
+        {
           imageSrc: '/img/feedback/james.png',
           text: '“Prisma LIVE is a total game changer! It puts the students and teachers first, which makes it feel like an extension of yourself and not a clunky tool.”',
           name: 'James M.',
           roleChip: (
             <span className="bg-coach-container text-on-coach-container px-2 py-0.5 rounded-2">
               Prisma coach
-            </span>
-          ),
-        },
-        {
-          imageSrc: '/img/feedback/benw.svg',
-          text: '“I feel much more comfortable and happy with Prisma than with a public school.”',
-          name: 'Ben W.',
-          roleChip: (
-            <span className="bg-learner-container text-on-learner-container px-2 py-0.5 rounded-2">
-              Prisma learner
             </span>
           ),
         },
