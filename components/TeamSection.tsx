@@ -10,6 +10,7 @@ const TeamSection: FC = () => {
           color: '#F5B981',
           name: 'Andrés',
           title: 'Software Engineer',
+          funTitle: 'Rich Text Editor Ninja 🥷',
           social: {
             linkedin: 'andresvidalberriel',
           },
@@ -19,6 +20,7 @@ const TeamSection: FC = () => {
           color: '#FFB4A9',
           name: 'Andrea',
           title: 'Software Engineer',
+          funTitle: 'Media Devices Juggler 🤹‍♀️',
           social: {
             linkedin: 'aphillipsr',
           },
@@ -28,6 +30,7 @@ const TeamSection: FC = () => {
           color: '#FFE15E',
           name: 'Alain',
           title: 'Founder & Co-President',
+          funTitle: 'Master Strategist ♟️',
           social: {
             linkedin: 'alainchuard',
             twitter: 'AlainChuard',
@@ -38,6 +41,7 @@ const TeamSection: FC = () => {
           color: '#6DDF77',
           name: 'Juan',
           title: 'Software Engineer',
+          funTitle: 'Tireless Firefighter 🚒',
           social: {
             linkedin: 'juanignaciolarrambebere',
           },
@@ -47,6 +51,7 @@ const TeamSection: FC = () => {
           color: '#FFE15E',
           name: 'Dominique',
           title: 'Product Lead',
+          funTitle: 'Chief Happy Hour Officer 🎉',
           social: {
             linkedin: 'dominique-kunz',
           },
@@ -56,6 +61,7 @@ const TeamSection: FC = () => {
           color: '#FFD480',
           name: 'Javi',
           title: 'Software Engineer',
+          funTitle: 'Frontend Wizard 🧙',
           social: {
             linkedin: 'javierm42',
           },
@@ -65,6 +71,7 @@ const TeamSection: FC = () => {
           color: '#85CEFF',
           name: 'Diego',
           title: 'Software Engineer',
+          funTitle: 'All-terrain Generalist 🚙',
           social: {
             linkedin: 'acostami',
             twitter: 'acostami',
@@ -75,6 +82,7 @@ const TeamSection: FC = () => {
           color: '#6FD8D6',
           name: 'Fede',
           title: 'Software Engineer',
+          funTitle: 'AWS Adventurer 🧗',
           social: {
             linkedin: 'federico-kauffman',
             twitter: 'fedekauffman',
@@ -85,6 +93,7 @@ const TeamSection: FC = () => {
           color: '#85CEFF',
           name: 'Fabián',
           title: 'Software Engineer',
+          funTitle: 'Pie Chart Chef 🥧',
           social: {
             linkedin: 'fabián-larrañaga',
             twitter: 'FLarraa',
@@ -95,6 +104,7 @@ const TeamSection: FC = () => {
           color: '#F5B981',
           name: 'Dominik',
           title: 'Product Designer',
+          funTitle: 'UX Visionary 🔭',
           social: {
             linkedin: 'dominik-kandrav%C3%BD-7485b9190',
             twitter: 'kndrv_dot',
@@ -105,6 +115,7 @@ const TeamSection: FC = () => {
           color: '#B38FFF',
           name: 'Martín',
           title: 'Software Engineer',
+          funTitle: 'Mad Video Scientist 🧪',
           social: {
             linkedin: 'feldman22',
           },
@@ -114,6 +125,7 @@ const TeamSection: FC = () => {
           color: '#DB9CFC',
           name: 'Leti',
           title: 'Software Engineer',
+          funTitle: 'Continuous Improvement Aficionado 🔁',
           social: {
             linkedin: 'leticia-errandonea',
           },
@@ -130,12 +142,15 @@ const TeamSection: FC = () => {
             <Image src={person.imageUrl} layout="fill" alt={person.name} />
           </div>
           <div className="space-y-2">
-            <h3 className="text-center transition-transform text-display-sm text-on-surface">
+            <h3 className="text-center text-display-sm text-on-surface group-hover:-translate-y-[20px] focus-within:-translate-y-[-20px] transition-transform">
               {person.name}
             </h3>
             <div className="grid grid-cols-1 h-fit">
-              <p className="col-start-1 row-start-1 text-center transition-transform text-body text-outline">
+              <p className="col-start-1 row-start-1 text-center text-body text-outline group-hover:-translate-y-[20px] focus-within:-translate-y-[-20px] transition-transform">
                 {person.title}
+              </p>
+              <p className="col-start-1 row-start-1 text-center transition-opacity rounded opacity-0 text-body text-outline group-hover:opacity-100 focus-within:opacity-100">
+                & {person.funTitle}
               </p>
             </div>
             <div className="flex justify-center gap-2">
