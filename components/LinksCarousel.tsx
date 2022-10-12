@@ -19,6 +19,13 @@ const LinksCarousel: FC = () => {
             'https://www.streaver.com/blog/posts/crdts-and-distributed-consistency-part-1-building-a-distributed-counter',
         },
         {
+          heading: 'Mode-aware colors',
+          text: 'We extended TailwindCSS to support dark mode without any class repetition.',
+          linkText: 'Read now',
+          linkUrl:
+            'https://www.wyeworks.com/blog/2022/10/12/mode-aware-colors-with-tailwind-css',
+        },
+        {
           heading: 'How did we make canvas changes performant?',
           text: 'Re-mounting videos without losing frames was made possible thanks to React Reverse Portals.',
           linkText: 'Read now',
